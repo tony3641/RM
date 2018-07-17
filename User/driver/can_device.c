@@ -41,6 +41,10 @@ moto_measure_t moto_trigger;
 moto_measure_t moto_chassis[4];
 /* 外围模块测试电机 */
 moto_measure_t moto_test;
+/*机械臂电机组*/
+//ID5 ID6
+moto_measure_t moto_arm[2];
+
 
 /**
   * @brief     CAN1 中断回调函数，在程序初始化时注册
@@ -80,16 +84,16 @@ void can1_recv_callback(uint32_t recv_id, uint8_t data[])
       err_detector_hook(CHASSIS_M4_OFFLINE);
     }
     break;
-    case CAN_YAW_MOTOR_ID:
+    case CAN_3508_M5_ID:
     {
-      encoder_data_handle(&moto_yaw, data);
-      err_detector_hook(GIMBAL_YAW_OFFLINE);
+      encoder_data_handle(&moto_arm[0], data);
+      //err_detector_hook(GIMBAL_YAW_OFFLINE);
     }
     break;
-    case CAN_PIT_MOTOR_ID:
+    case CAN_3508_M6_ID:
     {
-      encoder_data_handle(&moto_pit, data);
-      err_detector_hook(GIMBAL_PIT_OFFLINE);
+      encoder_data_handle(&moto_arm[1], data);
+      //err_detector_hook(GIMBAL_PIT_OFFLINE);
     }
     break;
     case CAN_TRIGGER_MOTOR_ID:

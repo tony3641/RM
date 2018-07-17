@@ -10,7 +10,7 @@
       <TargetName>rm_infantry</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060183::V5.06 update 2 (build 183)::ARMCC</pCCUsed>
+      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -52,7 +52,7 @@
           <OutputName>rm_infantry</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
-          <CreateHexFile>1</CreateHexFile>
+          <CreateHexFile>0</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\output\</ListingPath>
@@ -450,6 +450,16 @@
               <FileName>execute_task.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\app\execute_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>arm_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\arm_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>arm_task.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\arm_task.h</FilePath>
             </File>
           </Files>
         </Group>
