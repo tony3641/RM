@@ -2,5 +2,5 @@
 fuck keil :point_down::thumbsdown:  
 それでも、ここから始めましょう！:trollface:  
 ***
-![billy](/images/billy.jpeg)
+![billy](/images/billy.JPEG)
 # **:ok_hand::chicken::bus:K**
