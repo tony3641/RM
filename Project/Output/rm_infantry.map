@@ -1,4 +1,4 @@
-Component: ARM Compiler 5.06 update 2 (build 183) Tool: armlink [4d35b7]
+Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
 
 ==============================================================================
 
@@ -3767,409 +3767,409 @@ Memory Map of the image
 
   Load Region LR_IROM1 (Base: 0x08000000, Size: 0x0000a4a0, Max: 0x00200000, ABSOLUTE, COMPRESSED[0x0000a374])
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x0000a35c, Max: 0x00200000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x0000a35c, Max: 0x00200000, ABSOLUTE)
 
-    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x08000000   0x000001ac   Data   RO         6894    RESET               rm_infantry1_3.lib(startup_stm32f427xx.o)
-    0x080001ac   0x00000008   Code   RO         6706  * !!!main             c_w.l(__main.o)
-    0x080001b4   0x00000034   Code   RO         7029    !!!scatter          c_w.l(__scatter.o)
-    0x080001e8   0x0000003a   Code   RO         7027    !!dczerorl          c_w.l(__dczerorl.o)
-    0x08000222   0x00000002   PAD
-    0x08000224   0x0000001c   Code   RO         7031    !!handler_zi        c_w.l(__scatter_zi.o)
-    0x08000240   0x00000002   Code   RO         6891    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
-    0x08000242   0x00000004   Code   RO         6901    .ARM.Collect$$libinit$$00000001  c_w.l(libinit2.o)
-    0x08000246   0x00000000   Code   RO         6904    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
-    0x08000246   0x00000000   Code   RO         6907    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
-    0x08000246   0x00000000   Code   RO         6909    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
-    0x08000246   0x00000000   Code   RO         6911    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
-    0x08000246   0x00000000   Code   RO         6914    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
-    0x08000246   0x00000000   Code   RO         6916    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
-    0x08000246   0x00000000   Code   RO         6918    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
-    0x08000246   0x00000000   Code   RO         6920    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
-    0x08000246   0x00000000   Code   RO         6922    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
-    0x08000246   0x00000000   Code   RO         6924    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
-    0x08000246   0x00000000   Code   RO         6926    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
-    0x08000246   0x00000000   Code   RO         6928    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
-    0x08000246   0x00000000   Code   RO         6930    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
-    0x08000246   0x00000000   Code   RO         6932    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
-    0x08000246   0x00000000   Code   RO         6934    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
-    0x08000246   0x00000000   Code   RO         6938    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
-    0x08000246   0x00000000   Code   RO         6940    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
-    0x08000246   0x00000000   Code   RO         6942    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
-    0x08000246   0x00000000   Code   RO         6944    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
-    0x08000246   0x00000002   Code   RO         6945    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
-    0x08000248   0x00000002   Code   RO         6967    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
-    0x0800024a   0x00000000   Code   RO         6980    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
-    0x0800024a   0x00000000   Code   RO         6982    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
-    0x0800024a   0x00000000   Code   RO         6985    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
-    0x0800024a   0x00000000   Code   RO         6988    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
-    0x0800024a   0x00000000   Code   RO         6990    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
-    0x0800024a   0x00000000   Code   RO         6993    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
-    0x0800024a   0x00000002   Code   RO         6994    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
-    0x0800024c   0x00000000   Code   RO         6782    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
-    0x0800024c   0x00000000   Code   RO         6856    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
-    0x0800024c   0x00000006   Code   RO         6868    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
-    0x08000252   0x00000000   Code   RO         6858    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
-    0x08000252   0x00000004   Code   RO         6859    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
-    0x08000256   0x00000000   Code   RO         6861    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
-    0x08000256   0x00000008   Code   RO         6862    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
-    0x0800025e   0x00000002   Code   RO         6899    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
-    0x08000260   0x00000000   Code   RO         6947    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
-    0x08000260   0x00000004   Code   RO         6948    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
-    0x08000264   0x00000006   Code   RO         6949    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
-    0x0800026a   0x00000002   PAD
-    0x0800026c   0x000000ba   Code   RO         5515    .emb_text           rm_infantry1_3.lib(port.o)
-    0x08000326   0x0000008a   Code   RO         6698    .text               c_w.l(rt_memcpy_v6.o)
-    0x080003b0   0x00000064   Code   RO         6700    .text               c_w.l(rt_memcpy_w.o)
-    0x08000414   0x00000010   Code   RO         6702    .text               c_w.l(aeabi_memset.o)
-    0x08000424   0x00000044   Code   RO         6704    .text               c_w.l(rt_memclr.o)
-    0x08000468   0x00000016   Code   RO         6783    .text               c_w.l(_rserrno.o)
-    0x0800047e   0x0000004e   Code   RO         6785    .text               c_w.l(rt_memclr_w.o)
-    0x080004cc   0x00000008   Code   RO         6873    .text               c_w.l(rt_errno_addr_intlibspace.o)
-    0x080004d4   0x00000008   Code   RO         6879    .text               c_w.l(libspace.o)
-    0x080004dc   0x0000004a   Code   RO         6882    .text               c_w.l(sys_stackheap_outer.o)
-    0x08000526   0x00000012   Code   RO         6884    .text               c_w.l(exit.o)
-    0x08000538   0x00000040   Code   RO         6895    .text               rm_infantry1_3.lib(startup_stm32f427xx.o)
-    0x08000578   0x00000006   Code   RO         6953    .text               c_w.l(heapauxi.o)
-    0x0800057e   0x00000002   PAD
-    0x08000580   0x0000000c   Code   RO         6959    .text               c_w.l(sys_exit.o)
-    0x0800058c   0x00000002   Code   RO         6970    .text               c_w.l(use_no_semi.o)
-    0x0800058e   0x00000000   Code   RO         6972    .text               c_w.l(indicate_semi.o)
-    0x0800058e   0x00000002   PAD
-    0x08000590   0x0000016c   Code   RO         4963    i.ADC_Init          rm_infantry1_3.lib(stm32f4xx_hal_adc.o)
-    0x080006fc   0x00000004   Code   RO          951    i.BusFault_Handler  stm32f4xx_it.o
-    0x08000700   0x00000010   Code   RO          952    i.CAN1_RX0_IRQHandler  stm32f4xx_it.o
-    0x08000710   0x00000010   Code   RO          953    i.CAN1_TX_IRQHandler  stm32f4xx_it.o
-    0x08000720   0x00000010   Code   RO          954    i.CAN2_RX0_IRQHandler  stm32f4xx_it.o
-    0x08000730   0x00000010   Code   RO          955    i.CAN2_TX_IRQHandler  stm32f4xx_it.o
-    0x08000740   0x000001c2   Code   RO         2128    i.CAN_Receive_IT    rm_infantry1_3.lib(stm32f4xx_hal_can.o)
-    0x08000902   0x00000062   Code   RO         2129    i.CAN_Transmit_IT   rm_infantry1_3.lib(stm32f4xx_hal_can.o)
-    0x08000964   0x00000010   Code   RO          956    i.DMA1_Stream1_IRQHandler  stm32f4xx_it.o
-    0x08000974   0x00000010   Code   RO          957    i.DMA1_Stream3_IRQHandler  stm32f4xx_it.o
-    0x08000984   0x00000010   Code   RO          958    i.DMA1_Stream6_IRQHandler  stm32f4xx_it.o
-    0x08000994   0x00000010   Code   RO          959    i.DMA2_Stream1_IRQHandler  stm32f4xx_it.o
-    0x080009a4   0x00000010   Code   RO          960    i.DMA2_Stream2_IRQHandler  stm32f4xx_it.o
-    0x080009b4   0x00000034   Code   RO         1105    i.DMA_CalcBaseAndBitshift  rm_infantry1_3.lib(stm32f4xx_hal_dma.o)
-    0x080009e8   0x000000aa   Code   RO         1106    i.DMA_CheckFifoParam  rm_infantry1_3.lib(stm32f4xx_hal_dma.o)
-    0x08000a92   0x0000002c   Code   RO         1107    i.DMA_SetConfig     rm_infantry1_3.lib(stm32f4xx_hal_dma.o)
-    0x08000abe   0x00000002   Code   RO          961    i.DebugMon_Handler  stm32f4xx_it.o
-    0x08000ac0   0x00000194   Code   RO         4965    i.HAL_ADC_ConfigChannel  rm_infantry1_3.lib(stm32f4xx_hal_adc.o)
-    0x08000c54   0x00000068   Code   RO         4974    i.HAL_ADC_Init      rm_infantry1_3.lib(stm32f4xx_hal_adc.o)
-    0x08000cbc   0x00000054   Code   RO         5938    i.HAL_ADC_MspInit   rm_infantry1_3.lib(adc.o)
-    0x08000d10   0x00000108   Code   RO         2130    i.HAL_CAN_ConfigFilter  rm_infantry1_3.lib(stm32f4xx_hal_can.o)
-    0x08000e18   0x00000002   Code   RO         2132    i.HAL_CAN_ErrorCallback  rm_infantry1_3.lib(stm32f4xx_hal_can.o)
-    0x08000e1a   0x00000002   PAD
-    0x08000e1c   0x00000254   Code   RO         2135    i.HAL_CAN_IRQHandler  rm_infantry1_3.lib(stm32f4xx_hal_can.o)
-    0x08001070   0x000001bc   Code   RO         2136    i.HAL_CAN_Init      rm_infantry1_3.lib(stm32f4xx_hal_can.o)
-    0x0800122c   0x00000134   Code   RO         2989    i.HAL_CAN_MspInit   rm_infantry1_3.lib(can.o)
-    0x08001360   0x0000010c   Code   RO         2140    i.HAL_CAN_Receive_IT  rm_infantry1_3.lib(stm32f4xx_hal_can.o)
-    0x0800146c   0x00000068   Code   RO         3362    i.HAL_CAN_RxCpltCallback  rm_infantry1_3.lib(bsp_can.o)
-    0x080014d4   0x000002b8   Code   RO         2143    i.HAL_CAN_Transmit  rm_infantry1_3.lib(stm32f4xx_hal_can.o)
-    0x0800178c   0x00000002   Code   RO         2145    i.HAL_CAN_TxCpltCallback  rm_infantry1_3.lib(stm32f4xx_hal_can.o)
-    0x0800178e   0x00000028   Code   RO         1109    i.HAL_DMA_Abort_IT  rm_infantry1_3.lib(stm32f4xx_hal_dma.o)
-    0x080017b6   0x00000002   PAD
-    0x080017b8   0x00000248   Code   RO         1113    i.HAL_DMA_IRQHandler  rm_infantry1_3.lib(stm32f4xx_hal_dma.o)
-    0x08001a00   0x000000ec   Code   RO         1114    i.HAL_DMA_Init      rm_infantry1_3.lib(stm32f4xx_hal_dma.o)
-    0x08001aec   0x00000066   Code   RO         1117    i.HAL_DMA_Start     rm_infantry1_3.lib(stm32f4xx_hal_dma.o)
-    0x08001b52   0x0000001e   Code   RO         1970    i.HAL_Delay         rm_infantry1_3.lib(stm32f4xx_hal.o)
-    0x08001b70   0x0000021c   Code   RO         3981    i.HAL_GPIO_Init     rm_infantry1_3.lib(stm32f4xx_hal_gpio.o)
-    0x08001d8c   0x0000000c   Code   RO         3985    i.HAL_GPIO_WritePin  rm_infantry1_3.lib(stm32f4xx_hal_gpio.o)
-    0x08001d98   0x0000000c   Code   RO         1978    i.HAL_GetTick       rm_infantry1_3.lib(stm32f4xx_hal.o)
-    0x08001da4   0x00000010   Code   RO         1980    i.HAL_IncTick       rm_infantry1_3.lib(stm32f4xx_hal.o)
-    0x08001db4   0x0000003c   Code   RO         1981    i.HAL_Init          rm_infantry1_3.lib(stm32f4xx_hal.o)
-    0x08001df0   0x0000008c   Code   RO         3109    i.HAL_InitTick      rm_infantry1_3.lib(stm32f4xx_hal_timebase_tim.o)
-    0x08001e7c   0x00000002   Code   RO         1984    i.HAL_MspInit       rm_infantry1_3.lib(stm32f4xx_hal.o)
-    0x08001e7e   0x0000001a   Code   RO         4825    i.HAL_NVIC_EnableIRQ  rm_infantry1_3.lib(stm32f4xx_hal_cortex.o)
-    0x08001e98   0x0000007c   Code   RO         4831    i.HAL_NVIC_SetPriority  rm_infantry1_3.lib(stm32f4xx_hal_cortex.o)
-    0x08001f14   0x00000028   Code   RO         4832    i.HAL_NVIC_SetPriorityGrouping  rm_infantry1_3.lib(stm32f4xx_hal_cortex.o)
-    0x08001f3c   0x000000a4   Code   RO         5985    i.HAL_PWREx_EnableOverDrive  rm_infantry1_3.lib(stm32f4xx_hal_pwr_ex.o)
-    0x08001fe0   0x00000370   Code   RO         6053    i.HAL_RCCEx_PeriphCLKConfig  rm_infantry1_3.lib(stm32f4xx_hal_rcc_ex.o)
-    0x08002350   0x000001d0   Code   RO         4045    i.HAL_RCC_ClockConfig  rm_infantry1_3.lib(stm32f4xx_hal_rcc.o)
-    0x08002520   0x00000044   Code   RO         4049    i.HAL_RCC_GetClockConfig  rm_infantry1_3.lib(stm32f4xx_hal_rcc.o)
-    0x08002564   0x0000000c   Code   RO         4050    i.HAL_RCC_GetHCLKFreq  rm_infantry1_3.lib(stm32f4xx_hal_rcc.o)
-    0x08002570   0x0000002c   Code   RO         4052    i.HAL_RCC_GetPCLK1Freq  rm_infantry1_3.lib(stm32f4xx_hal_rcc.o)
-    0x0800259c   0x0000002c   Code   RO         4053    i.HAL_RCC_GetPCLK2Freq  rm_infantry1_3.lib(stm32f4xx_hal_rcc.o)
-    0x080025c8   0x000000b4   Code   RO         4054    i.HAL_RCC_GetSysClockFreq  rm_infantry1_3.lib(stm32f4xx_hal_rcc.o)
-    0x0800267c   0x0000044c   Code   RO         4057    i.HAL_RCC_OscConfig  rm_infantry1_3.lib(stm32f4xx_hal_rcc.o)
-    0x08002ac8   0x00000012   Code   RO         6472    i.HAL_RTCEx_BKUPRead  rm_infantry1_3.lib(stm32f4xx_hal_rtc_ex.o)
-    0x08002ada   0x00000012   Code   RO         6473    i.HAL_RTCEx_BKUPWrite  rm_infantry1_3.lib(stm32f4xx_hal_rtc_ex.o)
-    0x08002aec   0x000000fe   Code   RO         6498    i.HAL_RTCEx_SetWakeUpTimer  rm_infantry1_3.lib(stm32f4xx_hal_rtc_ex.o)
-    0x08002bea   0x00000002   PAD
-    0x08002bec   0x000000b4   Code   RO         6341    i.HAL_RTC_Init      rm_infantry1_3.lib(stm32f4xx_hal_rtc.o)
-    0x08002ca0   0x00000018   Code   RO         6268    i.HAL_RTC_MspInit   rm_infantry1_3.lib(rtc.o)
-    0x08002cb8   0x00000114   Code   RO         6347    i.HAL_RTC_SetDate   rm_infantry1_3.lib(stm32f4xx_hal_rtc.o)
-    0x08002dcc   0x00000134   Code   RO         6348    i.HAL_RTC_SetTime   rm_infantry1_3.lib(stm32f4xx_hal_rtc.o)
-    0x08002f00   0x0000003a   Code   RO         6349    i.HAL_RTC_WaitForSynchro  rm_infantry1_3.lib(stm32f4xx_hal_rtc.o)
-    0x08002f3a   0x0000008c   Code   RO         4396    i.HAL_SPI_Init      rm_infantry1_3.lib(stm32f4xx_hal_spi.o)
-    0x08002fc6   0x00000002   PAD
-    0x08002fc8   0x0000005c   Code   RO         5896    i.HAL_SPI_MspInit   rm_infantry1_3.lib(spi.o)
-    0x08003024   0x0000021e   Code   RO         4405    i.HAL_SPI_TransmitReceive  rm_infantry1_3.lib(stm32f4xx_hal_spi.o)
-    0x08003242   0x00000028   Code   RO         4834    i.HAL_SYSTICK_CLKSourceConfig  rm_infantry1_3.lib(stm32f4xx_hal_cortex.o)
-    0x0800326a   0x00000034   Code   RO         4836    i.HAL_SYSTICK_Config  rm_infantry1_3.lib(stm32f4xx_hal_cortex.o)
-    0x0800329e   0x00000002   Code   RO         4146    i.HAL_TIMEx_BreakCallback  rm_infantry1_3.lib(stm32f4xx_hal_tim_ex.o)
-    0x080032a0   0x00000002   Code   RO         4147    i.HAL_TIMEx_CommutationCallback  rm_infantry1_3.lib(stm32f4xx_hal_tim_ex.o)
-    0x080032a2   0x0000007e   Code   RO         4148    i.HAL_TIMEx_ConfigBreakDeadTime  rm_infantry1_3.lib(stm32f4xx_hal_tim_ex.o)
-    0x08003320   0x00000062   Code   RO         4163    i.HAL_TIMEx_MasterConfigSynchronization  rm_infantry1_3.lib(stm32f4xx_hal_tim_ex.o)
-    0x08003382   0x00000034   Code   RO         1324    i.HAL_TIM_Base_Init  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
-    0x080033b6   0x00000002   Code   RO         1326    i.HAL_TIM_Base_MspInit  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
-    0x080033b8   0x0000001e   Code   RO         1329    i.HAL_TIM_Base_Start_IT  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
-    0x080033d6   0x00000002   Code   RO         1353    i.HAL_TIM_IC_CaptureCallback  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
-    0x080033d8   0x00000196   Code   RO         1366    i.HAL_TIM_IRQHandler  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
-    0x0800356e   0x00000002   PAD
-    0x08003570   0x00000128   Code   RO         5768    i.HAL_TIM_MspPostInit  rm_infantry1_3.lib(tim.o)
-    0x08003698   0x00000002   Code   RO         1369    i.HAL_TIM_OC_DelayElapsedCallback  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
-    0x0800369a   0x00000108   Code   RO         1390    i.HAL_TIM_PWM_ConfigChannel  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
-    0x080037a2   0x00000034   Code   RO         1393    i.HAL_TIM_PWM_Init  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
-    0x080037d6   0x00000002   PAD
-    0x080037d8   0x00000110   Code   RO         5770    i.HAL_TIM_PWM_MspInit  rm_infantry1_3.lib(tim.o)
-    0x080038e8   0x00000002   Code   RO         1396    i.HAL_TIM_PWM_PulseFinishedCallback  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
-    0x080038ea   0x00000002   PAD
-    0x080038ec   0x0000004c   Code   RO         1397    i.HAL_TIM_PWM_Start  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
-    0x08003938   0x00000018   Code   RO         5846    i.HAL_TIM_PeriodElapsedCallback  rm_infantry1_3.lib(main.o)
-    0x08003950   0x00000002   Code   RO         1407    i.HAL_TIM_TriggerCallback  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
-    0x08003952   0x00000002   Code   RO         2279    i.HAL_UART_ErrorCallback  rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
-    0x08003954   0x0000014c   Code   RO         2282    i.HAL_UART_IRQHandler  rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
-    0x08003aa0   0x00000072   Code   RO         2283    i.HAL_UART_Init     rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
-    0x08003b12   0x00000002   PAD
-    0x08003b14   0x00000358   Code   RO         3041    i.HAL_UART_MspInit  rm_infantry1_3.lib(usart.o)
-    0x08003e6c   0x00000002   Code   RO         2289    i.HAL_UART_RxCpltCallback  rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
-    0x08003e6e   0x00000002   Code   RO         2294    i.HAL_UART_TxCpltCallback  rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
-    0x08003e70   0x00000004   Code   RO          962    i.HardFault_Handler  stm32f4xx_it.o
-    0x08003e74   0x0000007c   Code   RO         5939    i.MX_ADC1_Init      rm_infantry1_3.lib(adc.o)
-    0x08003ef0   0x00000058   Code   RO         2990    i.MX_CAN1_Init      rm_infantry1_3.lib(can.o)
-    0x08003f48   0x0000005c   Code   RO         2991    i.MX_CAN2_Init      rm_infantry1_3.lib(can.o)
-    0x08003fa4   0x00000098   Code   RO         6309    i.MX_DMA_Init       rm_infantry1_3.lib(dma.o)
-    0x0800403c   0x00000048   Code   RO         3149    i.MX_FREERTOS_Init  rm_infantry1_3.lib(freertos.o)
-    0x08004084   0x000002b4   Code   RO         6243    i.MX_GPIO_Init      rm_infantry1_3.lib(gpio.o)
-    0x08004338   0x000000d0   Code   RO         6269    i.MX_RTC_Init       rm_infantry1_3.lib(rtc.o)
-    0x08004408   0x00000058   Code   RO         5897    i.MX_SPI5_Init      rm_infantry1_3.lib(spi.o)
-    0x08004460   0x0000006c   Code   RO         5771    i.MX_TIM12_Init     rm_infantry1_3.lib(tim.o)
-    0x080044cc   0x000000c4   Code   RO         5772    i.MX_TIM2_Init      rm_infantry1_3.lib(tim.o)
-    0x08004590   0x000000a0   Code   RO         5773    i.MX_TIM3_Init      rm_infantry1_3.lib(tim.o)
-    0x08004630   0x000000c8   Code   RO         5774    i.MX_TIM4_Init      rm_infantry1_3.lib(tim.o)
-    0x080046f8   0x000000c8   Code   RO         5775    i.MX_TIM5_Init      rm_infantry1_3.lib(tim.o)
-    0x080047c0   0x00000104   Code   RO         5776    i.MX_TIM8_Init      rm_infantry1_3.lib(tim.o)
-    0x080048c4   0x0000004c   Code   RO         3042    i.MX_UART7_Init     rm_infantry1_3.lib(usart.o)
-    0x08004910   0x0000004c   Code   RO         3043    i.MX_UART8_Init     rm_infantry1_3.lib(usart.o)
-    0x0800495c   0x00000050   Code   RO         3044    i.MX_USART1_UART_Init  rm_infantry1_3.lib(usart.o)
-    0x080049ac   0x0000004c   Code   RO         3045    i.MX_USART3_UART_Init  rm_infantry1_3.lib(usart.o)
-    0x080049f8   0x0000004c   Code   RO         3046    i.MX_USART6_UART_Init  rm_infantry1_3.lib(usart.o)
-    0x08004a44   0x00000004   Code   RO          963    i.MemManage_Handler  stm32f4xx_it.o
-    0x08004a48   0x00000002   Code   RO          964    i.NMI_Handler       stm32f4xx_it.o
-    0x08004a4a   0x00000002   PAD
-    0x08004a4c   0x00000010   Code   RO         4838    i.NVIC_GetPriorityGrouping  rm_infantry1_3.lib(stm32f4xx_hal_cortex.o)
-    0x08004a5c   0x00000028   Code   RO         4839    i.NVIC_SetPriority  rm_infantry1_3.lib(stm32f4xx_hal_cortex.o)
-    0x08004a84   0x00000016   Code   RO         6350    i.RTC_Bcd2ToByte    rm_infantry1_3.lib(stm32f4xx_hal_rtc.o)
-    0x08004a9a   0x0000001a   Code   RO         6351    i.RTC_ByteToBcd2    rm_infantry1_3.lib(stm32f4xx_hal_rtc.o)
-    0x08004ab4   0x0000003e   Code   RO         6352    i.RTC_EnterInitMode  rm_infantry1_3.lib(stm32f4xx_hal_rtc.o)
-    0x08004af2   0x00000028   Code   RO         4420    i.SPI_CheckFlag_BSY  rm_infantry1_3.lib(stm32f4xx_hal_spi.o)
-    0x08004b1a   0x000000aa   Code   RO         4438    i.SPI_WaitFlagStateUntilTimeout  rm_infantry1_3.lib(stm32f4xx_hal_spi.o)
-    0x08004bc4   0x0000000a   Code   RO         3150    i.StartDefaultTask  rm_infantry1_3.lib(freertos.o)
-    0x08004bce   0x00000008   Code   RO          965    i.SysTick_Handler   stm32f4xx_it.o
-    0x08004bd6   0x00000002   PAD
-    0x08004bd8   0x00000108   Code   RO         5847    i.SystemClock_Config  rm_infantry1_3.lib(main.o)
-    0x08004ce0   0x00000064   Code   RO         3792    i.SystemInit        rm_infantry1_3.lib(system_stm32f4xx.o)
-    0x08004d44   0x00000010   Code   RO          966    i.TIM6_DAC_IRQHandler  stm32f4xx_it.o
-    0x08004d54   0x000000e4   Code   RO         1408    i.TIM_Base_SetConfig  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
-    0x08004e38   0x0000001c   Code   RO         1409    i.TIM_CCxChannelCmd  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
-    0x08004e54   0x00000070   Code   RO         1417    i.TIM_OC1_SetConfig  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
-    0x08004ec4   0x00000078   Code   RO         1418    i.TIM_OC2_SetConfig  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
-    0x08004f3c   0x00000078   Code   RO         1419    i.TIM_OC3_SetConfig  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
-    0x08004fb4   0x00000060   Code   RO         1420    i.TIM_OC4_SetConfig  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
-    0x08005014   0x00000014   Code   RO          967    i.UART7_IRQHandler  stm32f4xx_it.o
-    0x08005028   0x00000014   Code   RO          968    i.UART8_IRQHandler  stm32f4xx_it.o
-    0x0800503c   0x00000014   Code   RO         2296    i.UART_DMAAbortOnError  rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
-    0x08005050   0x00000020   Code   RO         2306    i.UART_EndRxTransfer  rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
-    0x08005070   0x00000020   Code   RO         2307    i.UART_EndTransmit_IT  rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
-    0x08005090   0x0000009a   Code   RO         2309    i.UART_Receive_IT   rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
-    0x0800512a   0x00000002   PAD
-    0x0800512c   0x00000368   Code   RO         2310    i.UART_SetConfig    rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
-    0x08005494   0x00000068   Code   RO         2311    i.UART_Transmit_IT  rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
-    0x080054fc   0x00000014   Code   RO          969    i.USART1_IRQHandler  stm32f4xx_it.o
-    0x08005510   0x00000014   Code   RO          970    i.USART3_IRQHandler  stm32f4xx_it.o
-    0x08005524   0x00000014   Code   RO          971    i.USART6_IRQHandler  stm32f4xx_it.o
-    0x08005538   0x00000004   Code   RO          972    i.UsageFault_Handler  stm32f4xx_it.o
-    0x0800553c   0x00000004   Code   RO         5848    i._Error_Handler    rm_infantry1_3.lib(main.o)
-    0x08005540   0x00000030   Code   RO         6839    i.__ARM_fpclassify  m_wm.l(fpclassify.o)
-    0x08005570   0x00000360   Code   RO         6726    i.__hardfp_asin     m_wm.l(asin.o)
-    0x080058d0   0x000002d8   Code   RO         6808    i.__hardfp_atan     m_wm.l(atan.o)
-    0x08005ba8   0x000001f0   Code   RO         6740    i.__hardfp_atan2    m_wm.l(atan2.o)
-    0x08005d98   0x0000007a   Code   RO         6770    i.__hardfp_sqrt     m_wm.l(sqrt.o)
-    0x08005e12   0x000000f8   Code   RO         6841    i.__kernel_poly     m_wm.l(poly.o)
-    0x08005f0a   0x00000014   Code   RO         6826    i.__mathlib_dbl_infnan  m_wm.l(dunder.o)
-    0x08005f1e   0x00000014   Code   RO         6827    i.__mathlib_dbl_infnan2  m_wm.l(dunder.o)
-    0x08005f32   0x00000006   PAD
-    0x08005f38   0x00000020   Code   RO         6828    i.__mathlib_dbl_invalid  m_wm.l(dunder.o)
-    0x08005f58   0x00000020   Code   RO         6831    i.__mathlib_dbl_underflow  m_wm.l(dunder.o)
-    0x08005f78   0x0000002e   Code   RO          330    i.abs_limit         pid.o
-    0x08005fa6   0x00000010   Code   RO         6810    i.atan              m_wm.l(atan.o)
-    0x08005fb6   0x00000002   PAD
-    0x08005fb8   0x00000168   Code   RO            4    i.can1_recv_callback  can_device.o
-    0x08006120   0x00000068   Code   RO         3363    i.can_device_init   rm_infantry1_3.lib(bsp_can.o)
-    0x08006188   0x0000001c   Code   RO         3364    i.can_receive_start  rm_infantry1_3.lib(bsp_can.o)
-    0x080061a4   0x00000018   Code   RO         3365    i.can_recv_callback_register  rm_infantry1_3.lib(bsp_can.o)
-    0x080061bc   0x0000001c   Code   RO          200    i.dbus_uart_callback  uart_device.o
-    0x080061d8   0x0000002c   Code   RO         3668    i.digital_tube_init  rm_infantry1_3.lib(bsp_io.o)
-    0x08006204   0x000000b8   Code   RO         3669    i.display_num       rm_infantry1_3.lib(bsp_io.o)
-    0x080062bc   0x000000d0   Code   RO            6    i.encoder_data_handle  can_device.o
-    0x0800638c   0x00000028   Code   RO          691    i.err_detector_hook  detect_task.o
-    0x080063b4   0x00000030   Code   RO          739    i.execute_task      execute_task.o
-    0x080063e4   0x00000018   Code   RO         6754    i.fabs              m_wm.l(fabs.o)
-    0x080063fc   0x00000010   Code   RO            7    i.get_moto_offset   can_device.o
-    0x0800640c   0x000007e0   Code   RO         3532    i.imu_AHRS_update   rm_infantry1_3.lib(bsp_imu.o)
-    0x08006bec   0x00000344   Code   RO         3533    i.imu_attitude_update  rm_infantry1_3.lib(bsp_imu.o)
-    0x08006f30   0x00000034   Code   RO         3534    i.imu_task          rm_infantry1_3.lib(bsp_imu.o)
-    0x08006f64   0x0000009c   Code   RO          413    i.init_setup        startup.o
-    0x08007000   0x0000003c   Code   RO         3535    i.invSqrt           rm_infantry1_3.lib(bsp_imu.o)
-    0x0800703c   0x00000100   Code   RO         3537    i.ist8310_init      rm_infantry1_3.lib(bsp_imu.o)
-    0x0800713c   0x0000003a   Code   RO         3538    i.ist_reg_read_by_mpu  rm_infantry1_3.lib(bsp_imu.o)
-    0x08007176   0x00000040   Code   RO         3539    i.ist_reg_write_by_mpu  rm_infantry1_3.lib(bsp_imu.o)
-    0x080071b6   0x00000002   PAD
-    0x080071b8   0x000000b0   Code   RO         5849    i.main              rm_infantry1_3.lib(main.o)
-    0x08007268   0x0000000e   Code   RO         2590    i.makeFreeRtosPriority  rm_infantry1_3.lib(cmsis_os.o)
-    0x08007276   0x00000002   PAD
-    0x08007278   0x00000068   Code   RO         3540    i.mpu_device_init   rm_infantry1_3.lib(bsp_imu.o)
-    0x080072e0   0x000001e8   Code   RO         3541    i.mpu_get_data      rm_infantry1_3.lib(bsp_imu.o)
-    0x080074c8   0x0000008c   Code   RO         3542    i.mpu_mst_i2c_auto_read_config  rm_infantry1_3.lib(bsp_imu.o)
-    0x08007554   0x00000130   Code   RO         3543    i.mpu_offset_cal    rm_infantry1_3.lib(bsp_imu.o)
-    0x08007684   0x00000054   Code   RO         3544    i.mpu_read_reg      rm_infantry1_3.lib(bsp_imu.o)
-    0x080076d8   0x00000064   Code   RO         3545    i.mpu_read_regs     rm_infantry1_3.lib(bsp_imu.o)
-    0x0800773c   0x00000058   Code   RO         3546    i.mpu_write_reg     rm_infantry1_3.lib(bsp_imu.o)
-    0x08007794   0x00000018   Code   RO         2592    i.osDelay           rm_infantry1_3.lib(cmsis_os.o)
-    0x080077ac   0x0000000a   Code   RO         2595    i.osKernelStart     rm_infantry1_3.lib(cmsis_os.o)
-    0x080077b6   0x00000010   Code   RO         2628    i.osSystickHandler  rm_infantry1_3.lib(cmsis_os.o)
-    0x080077c6   0x00000030   Code   RO         2629    i.osThreadCreate    rm_infantry1_3.lib(cmsis_os.o)
-    0x080077f6   0x000000ae   Code   RO          331    i.pid_calc          pid.o
-    0x080078a4   0x00000012   Code   RO          332    i.pid_init          pid.o
-    0x080078b6   0x00000002   PAD
-    0x080078b8   0x00000098   Code   RO         5198    i.prvAddCurrentTaskToDelayedList  rm_infantry1_3.lib(tasks.o)
-    0x08007950   0x000000b4   Code   RO         5199    i.prvAddNewTaskToReadyList  rm_infantry1_3.lib(tasks.o)
-    0x08007a04   0x00000064   Code   RO         5200    i.prvCheckTasksWaitingTermination  rm_infantry1_3.lib(tasks.o)
-    0x08007a68   0x00000012   Code   RO         5201    i.prvDeleteTCB      rm_infantry1_3.lib(tasks.o)
-    0x08007a7a   0x00000002   PAD
-    0x08007a7c   0x0000007c   Code   RO         5127    i.prvHeapInit       rm_infantry1_3.lib(heap_4.o)
-    0x08007af8   0x00000028   Code   RO         5202    i.prvIdleTask       rm_infantry1_3.lib(tasks.o)
-    0x08007b20   0x000000b4   Code   RO         5203    i.prvInitialiseNewTask  rm_infantry1_3.lib(tasks.o)
-    0x08007bd4   0x00000068   Code   RO         5204    i.prvInitialiseTaskLists  rm_infantry1_3.lib(tasks.o)
-    0x08007c3c   0x00000068   Code   RO         5128    i.prvInsertBlockIntoFreeList  rm_infantry1_3.lib(heap_4.o)
-    0x08007ca4   0x00000034   Code   RO         5205    i.prvResetNextTaskUnblockTime  rm_infantry1_3.lib(tasks.o)
-    0x08007cd8   0x00000040   Code   RO         5516    i.prvTaskExitError  rm_infantry1_3.lib(port.o)
-    0x08007d18   0x0000013c   Code   RO         5129    i.pvPortMalloc      rm_infantry1_3.lib(heap_4.o)
-    0x08007e54   0x0000002c   Code   RO         5517    i.pxPortInitialiseStack  rm_infantry1_3.lib(port.o)
-    0x08007e80   0x00000010   Code   RO          242    i.read_cali_data    calibrate.o
-    0x08007e90   0x00000018   Code   RO         3490    i.read_flash        rm_infantry1_3.lib(bsp_flash.o)
-    0x08007ea8   0x00000144   Code   RO         3674    i.refresh_digital_tube  rm_infantry1_3.lib(bsp_io.o)
-    0x08007fec   0x00000178   Code   RO          201    i.remote_data_handle  uart_device.o
-    0x08008164   0x00000184   Code   RO         3676    i.set_digital_io_dir  rm_infantry1_3.lib(bsp_io.o)
-    0x080082e8   0x00000040   Code   RO         3677    i.set_pwm_group_param  rm_infantry1_3.lib(bsp_io.o)
-    0x08008328   0x000000a8   Code   RO         3678    i.set_pwm_param     rm_infantry1_3.lib(bsp_io.o)
-    0x080083d0   0x00000030   Code   RO           12    i.set_test_motor_current  can_device.o
-    0x08008400   0x0000006e   Code   RO         6772    i.sqrt              m_wm.l(sqrt.o)
-    0x0800846e   0x00000002   PAD
-    0x08008470   0x000000d4   Code   RO         3679    i.start_pwm_output  rm_infantry1_3.lib(bsp_io.o)
-    0x08008544   0x00000028   Code   RO          414    i.sys_start_task    startup.o
-    0x0800856c   0x000000c0   Code   RO          918    i.test_moto_control  test_custom.o
-    0x0800862c   0x00000024   Code   RO          919    i.test_moto_init    test_custom.o
-    0x08008650   0x00000114   Code   RO         3427    i.uart_init         rm_infantry1_3.lib(bsp_uart.o)
-    0x08008764   0x0000005c   Code   RO         3428    i.uart_receive_no_dma_it  rm_infantry1_3.lib(bsp_uart.o)
-    0x080087c0   0x00000078   Code   RO         3429    i.uart_receive_start  rm_infantry1_3.lib(bsp_uart.o)
-    0x08008838   0x00000038   Code   RO         3430    i.uart_recv_callback_register  rm_infantry1_3.lib(bsp_uart.o)
-    0x08008870   0x0000043c   Code   RO         3431    i.uart_recv_interrupt_callback  rm_infantry1_3.lib(bsp_uart.o)
-    0x08008cac   0x00000028   Code   RO         6195    i.uxListRemove      rm_infantry1_3.lib(list.o)
-    0x08008cd4   0x00000004   Code   RO         3151    i.vApplicationStackOverflowHook  rm_infantry1_3.lib(freertos.o)
-    0x08008cd8   0x0000001a   Code   RO         6196    i.vListInitialise   rm_infantry1_3.lib(list.o)
-    0x08008cf2   0x00000006   Code   RO         6197    i.vListInitialiseItem  rm_infantry1_3.lib(list.o)
-    0x08008cf8   0x00000034   Code   RO         6198    i.vListInsert       rm_infantry1_3.lib(list.o)
-    0x08008d2c   0x00000018   Code   RO         6199    i.vListInsertEnd    rm_infantry1_3.lib(list.o)
-    0x08008d44   0x00000054   Code   RO         5519    i.vPortEnterCritical  rm_infantry1_3.lib(port.o)
-    0x08008d98   0x0000003c   Code   RO         5520    i.vPortExitCritical  rm_infantry1_3.lib(port.o)
-    0x08008dd4   0x00000094   Code   RO         5130    i.vPortFree         rm_infantry1_3.lib(heap_4.o)
-    0x08008e68   0x00000020   Code   RO         5521    i.vPortSetupTimerInterrupt  rm_infantry1_3.lib(port.o)
-    0x08008e88   0x0000005c   Code   RO         5215    i.vTaskDelay        rm_infantry1_3.lib(tasks.o)
-    0x08008ee4   0x00000088   Code   RO         5227    i.vTaskStartScheduler  rm_infantry1_3.lib(tasks.o)
-    0x08008f6c   0x00000010   Code   RO         5229    i.vTaskSuspendAll   rm_infantry1_3.lib(tasks.o)
-    0x08008f7c   0x000000a8   Code   RO         5230    i.vTaskSwitchContext  rm_infantry1_3.lib(tasks.o)
-    0x08009024   0x000000e4   Code   RO         3367    i.write_can         rm_infantry1_3.lib(bsp_can.o)
-    0x08009108   0x000000b0   Code   RO         3682    i.write_digital_io  rm_infantry1_3.lib(bsp_io.o)
-    0x080091b8   0x000000dc   Code   RO         3683    i.write_led_io      rm_infantry1_3.lib(bsp_io.o)
-    0x08009294   0x0000013c   Code   RO         5523    i.xPortStartScheduler  rm_infantry1_3.lib(port.o)
-    0x080093d0   0x00000034   Code   RO         5524    i.xPortSysTickHandler  rm_infantry1_3.lib(port.o)
-    0x08009404   0x00000060   Code   RO         5232    i.xTaskCreate       rm_infantry1_3.lib(tasks.o)
-    0x08009464   0x00000020   Code   RO         5236    i.xTaskGetSchedulerState  rm_infantry1_3.lib(tasks.o)
-    0x08009484   0x00000148   Code   RO         5239    i.xTaskIncrementTick  rm_infantry1_3.lib(tasks.o)
-    0x080095cc   0x00000104   Code   RO         5245    i.xTaskResumeAll    rm_infantry1_3.lib(tasks.o)
-    0x080096d0   0x00000018   Code   RO         6787    x$fpl$basic         fz_wm.l(basic.o)
-    0x080096e8   0x00000062   Code   RO         6708    x$fpl$d2f           fz_wm.l(d2f.o)
-    0x0800974a   0x00000002   PAD
-    0x0800974c   0x00000150   Code   RO         6789    x$fpl$dadd          fz_wm.l(daddsub_clz.o)
-    0x0800989c   0x000002b0   Code   RO         6711    x$fpl$ddiv          fz_wm.l(ddiv.o)
-    0x08009b4c   0x00000154   Code   RO         6722    x$fpl$dmul          fz_wm.l(dmul.o)
-    0x08009ca0   0x0000009c   Code   RO         6797    x$fpl$dnaninf       fz_wm.l(dnaninf.o)
-    0x08009d3c   0x0000000c   Code   RO         6799    x$fpl$dretinf       fz_wm.l(dretinf.o)
-    0x08009d48   0x00000016   Code   RO         6790    x$fpl$drsb          fz_wm.l(daddsub_clz.o)
-    0x08009d5e   0x00000002   PAD
-    0x08009d60   0x00000198   Code   RO         6801    x$fpl$dsqrt         fz_wm.l(dsqrt_umaal.o)
-    0x08009ef8   0x000001d4   Code   RO         6791    x$fpl$dsub          fz_wm.l(daddsub_clz.o)
-    0x0800a0cc   0x00000056   Code   RO         6724    x$fpl$f2d           fz_wm.l(f2d.o)
-    0x0800a122   0x0000008c   Code   RO         6803    x$fpl$fnaninf       fz_wm.l(fnaninf.o)
-    0x0800a1ae   0x0000000a   Code   RO         6957    x$fpl$fpinit        fz_wm.l(fpinit.o)
-    0x0800a1b8   0x0000000a   Code   RO         6805    x$fpl$fretinf       fz_wm.l(fretinf.o)
-    0x0800a1c2   0x00000000   Code   RO         6807    x$fpl$usenofp       fz_wm.l(usenofp.o)
-    0x0800a1c2   0x00000002   PAD
-    0x0800a1c4   0x00000014   Data   RO          415    .constdata          startup.o
-    0x0800a1d8   0x00000008   Data   RO         1120    .constdata          rm_infantry1_3.lib(stm32f4xx_hal_dma.o)
-    0x0800a1e0   0x00000028   Data   RO         3152    .constdata          rm_infantry1_3.lib(freertos.o)
-    0x0800a208   0x0000000e   Data   RO         3548    .constdata          rm_infantry1_3.lib(bsp_imu.o)
-    0x0800a216   0x00000018   Data   RO         3793    .constdata          rm_infantry1_3.lib(system_stm32f4xx.o)
-    0x0800a22e   0x00000002   PAD
-    0x0800a230   0x00000050   Data   RO         6729    .constdata          m_wm.l(asin.o)
-    0x0800a280   0x00000098   Data   RO         6811    .constdata          m_wm.l(atan.o)
-    0x0800a318   0x00000008   Data   RO         6843    .constdata          m_wm.l(qnan.o)
-    0x0800a320   0x00000008   Data   RO          416    .conststring        startup.o
-    0x0800a328   0x00000014   Data   RO         3153    .conststring        rm_infantry1_3.lib(freertos.o)
-    0x0800a33c   0x00000020   Data   RO         7025    Region$$Table       anon$$obj.o
+    0x08000000   0x08000000   0x000001ac   Data   RO         6894    RESET               rm_infantry1_3.lib(startup_stm32f427xx.o)
+    0x080001ac   0x080001ac   0x00000008   Code   RO         6706  * !!!main             c_w.l(__main.o)
+    0x080001b4   0x080001b4   0x00000034   Code   RO         7029    !!!scatter          c_w.l(__scatter.o)
+    0x080001e8   0x080001e8   0x0000003a   Code   RO         7027    !!dczerorl          c_w.l(__dczerorl.o)
+    0x08000222   0x08000222   0x00000002   PAD
+    0x08000224   0x08000224   0x0000001c   Code   RO         7031    !!handler_zi        c_w.l(__scatter_zi.o)
+    0x08000240   0x08000240   0x00000002   Code   RO         6891    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
+    0x08000242   0x08000242   0x00000004   Code   RO         6901    .ARM.Collect$$libinit$$00000001  c_w.l(libinit2.o)
+    0x08000246   0x08000246   0x00000000   Code   RO         6904    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
+    0x08000246   0x08000246   0x00000000   Code   RO         6907    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
+    0x08000246   0x08000246   0x00000000   Code   RO         6909    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
+    0x08000246   0x08000246   0x00000000   Code   RO         6911    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
+    0x08000246   0x08000246   0x00000000   Code   RO         6914    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
+    0x08000246   0x08000246   0x00000000   Code   RO         6916    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
+    0x08000246   0x08000246   0x00000000   Code   RO         6918    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
+    0x08000246   0x08000246   0x00000000   Code   RO         6920    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
+    0x08000246   0x08000246   0x00000000   Code   RO         6922    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
+    0x08000246   0x08000246   0x00000000   Code   RO         6924    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
+    0x08000246   0x08000246   0x00000000   Code   RO         6926    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
+    0x08000246   0x08000246   0x00000000   Code   RO         6928    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
+    0x08000246   0x08000246   0x00000000   Code   RO         6930    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
+    0x08000246   0x08000246   0x00000000   Code   RO         6932    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
+    0x08000246   0x08000246   0x00000000   Code   RO         6934    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
+    0x08000246   0x08000246   0x00000000   Code   RO         6938    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
+    0x08000246   0x08000246   0x00000000   Code   RO         6940    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
+    0x08000246   0x08000246   0x00000000   Code   RO         6942    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
+    0x08000246   0x08000246   0x00000000   Code   RO         6944    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
+    0x08000246   0x08000246   0x00000002   Code   RO         6945    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
+    0x08000248   0x08000248   0x00000002   Code   RO         6967    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
+    0x0800024a   0x0800024a   0x00000000   Code   RO         6980    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
+    0x0800024a   0x0800024a   0x00000000   Code   RO         6982    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
+    0x0800024a   0x0800024a   0x00000000   Code   RO         6985    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
+    0x0800024a   0x0800024a   0x00000000   Code   RO         6988    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
+    0x0800024a   0x0800024a   0x00000000   Code   RO         6990    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
+    0x0800024a   0x0800024a   0x00000000   Code   RO         6993    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
+    0x0800024a   0x0800024a   0x00000002   Code   RO         6994    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
+    0x0800024c   0x0800024c   0x00000000   Code   RO         6782    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
+    0x0800024c   0x0800024c   0x00000000   Code   RO         6856    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
+    0x0800024c   0x0800024c   0x00000006   Code   RO         6868    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
+    0x08000252   0x08000252   0x00000000   Code   RO         6858    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
+    0x08000252   0x08000252   0x00000004   Code   RO         6859    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
+    0x08000256   0x08000256   0x00000000   Code   RO         6861    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
+    0x08000256   0x08000256   0x00000008   Code   RO         6862    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
+    0x0800025e   0x0800025e   0x00000002   Code   RO         6899    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
+    0x08000260   0x08000260   0x00000000   Code   RO         6947    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
+    0x08000260   0x08000260   0x00000004   Code   RO         6948    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
+    0x08000264   0x08000264   0x00000006   Code   RO         6949    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
+    0x0800026a   0x0800026a   0x00000002   PAD
+    0x0800026c   0x0800026c   0x000000ba   Code   RO         5515    .emb_text           rm_infantry1_3.lib(port.o)
+    0x08000326   0x08000326   0x0000008a   Code   RO         6698    .text               c_w.l(rt_memcpy_v6.o)
+    0x080003b0   0x080003b0   0x00000064   Code   RO         6700    .text               c_w.l(rt_memcpy_w.o)
+    0x08000414   0x08000414   0x00000010   Code   RO         6702    .text               c_w.l(aeabi_memset.o)
+    0x08000424   0x08000424   0x00000044   Code   RO         6704    .text               c_w.l(rt_memclr.o)
+    0x08000468   0x08000468   0x00000016   Code   RO         6783    .text               c_w.l(_rserrno.o)
+    0x0800047e   0x0800047e   0x0000004e   Code   RO         6785    .text               c_w.l(rt_memclr_w.o)
+    0x080004cc   0x080004cc   0x00000008   Code   RO         6873    .text               c_w.l(rt_errno_addr_intlibspace.o)
+    0x080004d4   0x080004d4   0x00000008   Code   RO         6879    .text               c_w.l(libspace.o)
+    0x080004dc   0x080004dc   0x0000004a   Code   RO         6882    .text               c_w.l(sys_stackheap_outer.o)
+    0x08000526   0x08000526   0x00000012   Code   RO         6884    .text               c_w.l(exit.o)
+    0x08000538   0x08000538   0x00000040   Code   RO         6895    .text               rm_infantry1_3.lib(startup_stm32f427xx.o)
+    0x08000578   0x08000578   0x00000006   Code   RO         6953    .text               c_w.l(heapauxi.o)
+    0x0800057e   0x0800057e   0x00000002   PAD
+    0x08000580   0x08000580   0x0000000c   Code   RO         6959    .text               c_w.l(sys_exit.o)
+    0x0800058c   0x0800058c   0x00000002   Code   RO         6970    .text               c_w.l(use_no_semi.o)
+    0x0800058e   0x0800058e   0x00000000   Code   RO         6972    .text               c_w.l(indicate_semi.o)
+    0x0800058e   0x0800058e   0x00000002   PAD
+    0x08000590   0x08000590   0x0000016c   Code   RO         4963    i.ADC_Init          rm_infantry1_3.lib(stm32f4xx_hal_adc.o)
+    0x080006fc   0x080006fc   0x00000004   Code   RO          951    i.BusFault_Handler  stm32f4xx_it.o
+    0x08000700   0x08000700   0x00000010   Code   RO          952    i.CAN1_RX0_IRQHandler  stm32f4xx_it.o
+    0x08000710   0x08000710   0x00000010   Code   RO          953    i.CAN1_TX_IRQHandler  stm32f4xx_it.o
+    0x08000720   0x08000720   0x00000010   Code   RO          954    i.CAN2_RX0_IRQHandler  stm32f4xx_it.o
+    0x08000730   0x08000730   0x00000010   Code   RO          955    i.CAN2_TX_IRQHandler  stm32f4xx_it.o
+    0x08000740   0x08000740   0x000001c2   Code   RO         2128    i.CAN_Receive_IT    rm_infantry1_3.lib(stm32f4xx_hal_can.o)
+    0x08000902   0x08000902   0x00000062   Code   RO         2129    i.CAN_Transmit_IT   rm_infantry1_3.lib(stm32f4xx_hal_can.o)
+    0x08000964   0x08000964   0x00000010   Code   RO          956    i.DMA1_Stream1_IRQHandler  stm32f4xx_it.o
+    0x08000974   0x08000974   0x00000010   Code   RO          957    i.DMA1_Stream3_IRQHandler  stm32f4xx_it.o
+    0x08000984   0x08000984   0x00000010   Code   RO          958    i.DMA1_Stream6_IRQHandler  stm32f4xx_it.o
+    0x08000994   0x08000994   0x00000010   Code   RO          959    i.DMA2_Stream1_IRQHandler  stm32f4xx_it.o
+    0x080009a4   0x080009a4   0x00000010   Code   RO          960    i.DMA2_Stream2_IRQHandler  stm32f4xx_it.o
+    0x080009b4   0x080009b4   0x00000034   Code   RO         1105    i.DMA_CalcBaseAndBitshift  rm_infantry1_3.lib(stm32f4xx_hal_dma.o)
+    0x080009e8   0x080009e8   0x000000aa   Code   RO         1106    i.DMA_CheckFifoParam  rm_infantry1_3.lib(stm32f4xx_hal_dma.o)
+    0x08000a92   0x08000a92   0x0000002c   Code   RO         1107    i.DMA_SetConfig     rm_infantry1_3.lib(stm32f4xx_hal_dma.o)
+    0x08000abe   0x08000abe   0x00000002   Code   RO          961    i.DebugMon_Handler  stm32f4xx_it.o
+    0x08000ac0   0x08000ac0   0x00000194   Code   RO         4965    i.HAL_ADC_ConfigChannel  rm_infantry1_3.lib(stm32f4xx_hal_adc.o)
+    0x08000c54   0x08000c54   0x00000068   Code   RO         4974    i.HAL_ADC_Init      rm_infantry1_3.lib(stm32f4xx_hal_adc.o)
+    0x08000cbc   0x08000cbc   0x00000054   Code   RO         5938    i.HAL_ADC_MspInit   rm_infantry1_3.lib(adc.o)
+    0x08000d10   0x08000d10   0x00000108   Code   RO         2130    i.HAL_CAN_ConfigFilter  rm_infantry1_3.lib(stm32f4xx_hal_can.o)
+    0x08000e18   0x08000e18   0x00000002   Code   RO         2132    i.HAL_CAN_ErrorCallback  rm_infantry1_3.lib(stm32f4xx_hal_can.o)
+    0x08000e1a   0x08000e1a   0x00000002   PAD
+    0x08000e1c   0x08000e1c   0x00000254   Code   RO         2135    i.HAL_CAN_IRQHandler  rm_infantry1_3.lib(stm32f4xx_hal_can.o)
+    0x08001070   0x08001070   0x000001bc   Code   RO         2136    i.HAL_CAN_Init      rm_infantry1_3.lib(stm32f4xx_hal_can.o)
+    0x0800122c   0x0800122c   0x00000134   Code   RO         2989    i.HAL_CAN_MspInit   rm_infantry1_3.lib(can.o)
+    0x08001360   0x08001360   0x0000010c   Code   RO         2140    i.HAL_CAN_Receive_IT  rm_infantry1_3.lib(stm32f4xx_hal_can.o)
+    0x0800146c   0x0800146c   0x00000068   Code   RO         3362    i.HAL_CAN_RxCpltCallback  rm_infantry1_3.lib(bsp_can.o)
+    0x080014d4   0x080014d4   0x000002b8   Code   RO         2143    i.HAL_CAN_Transmit  rm_infantry1_3.lib(stm32f4xx_hal_can.o)
+    0x0800178c   0x0800178c   0x00000002   Code   RO         2145    i.HAL_CAN_TxCpltCallback  rm_infantry1_3.lib(stm32f4xx_hal_can.o)
+    0x0800178e   0x0800178e   0x00000028   Code   RO         1109    i.HAL_DMA_Abort_IT  rm_infantry1_3.lib(stm32f4xx_hal_dma.o)
+    0x080017b6   0x080017b6   0x00000002   PAD
+    0x080017b8   0x080017b8   0x00000248   Code   RO         1113    i.HAL_DMA_IRQHandler  rm_infantry1_3.lib(stm32f4xx_hal_dma.o)
+    0x08001a00   0x08001a00   0x000000ec   Code   RO         1114    i.HAL_DMA_Init      rm_infantry1_3.lib(stm32f4xx_hal_dma.o)
+    0x08001aec   0x08001aec   0x00000066   Code   RO         1117    i.HAL_DMA_Start     rm_infantry1_3.lib(stm32f4xx_hal_dma.o)
+    0x08001b52   0x08001b52   0x0000001e   Code   RO         1970    i.HAL_Delay         rm_infantry1_3.lib(stm32f4xx_hal.o)
+    0x08001b70   0x08001b70   0x0000021c   Code   RO         3981    i.HAL_GPIO_Init     rm_infantry1_3.lib(stm32f4xx_hal_gpio.o)
+    0x08001d8c   0x08001d8c   0x0000000c   Code   RO         3985    i.HAL_GPIO_WritePin  rm_infantry1_3.lib(stm32f4xx_hal_gpio.o)
+    0x08001d98   0x08001d98   0x0000000c   Code   RO         1978    i.HAL_GetTick       rm_infantry1_3.lib(stm32f4xx_hal.o)
+    0x08001da4   0x08001da4   0x00000010   Code   RO         1980    i.HAL_IncTick       rm_infantry1_3.lib(stm32f4xx_hal.o)
+    0x08001db4   0x08001db4   0x0000003c   Code   RO         1981    i.HAL_Init          rm_infantry1_3.lib(stm32f4xx_hal.o)
+    0x08001df0   0x08001df0   0x0000008c   Code   RO         3109    i.HAL_InitTick      rm_infantry1_3.lib(stm32f4xx_hal_timebase_tim.o)
+    0x08001e7c   0x08001e7c   0x00000002   Code   RO         1984    i.HAL_MspInit       rm_infantry1_3.lib(stm32f4xx_hal.o)
+    0x08001e7e   0x08001e7e   0x0000001a   Code   RO         4825    i.HAL_NVIC_EnableIRQ  rm_infantry1_3.lib(stm32f4xx_hal_cortex.o)
+    0x08001e98   0x08001e98   0x0000007c   Code   RO         4831    i.HAL_NVIC_SetPriority  rm_infantry1_3.lib(stm32f4xx_hal_cortex.o)
+    0x08001f14   0x08001f14   0x00000028   Code   RO         4832    i.HAL_NVIC_SetPriorityGrouping  rm_infantry1_3.lib(stm32f4xx_hal_cortex.o)
+    0x08001f3c   0x08001f3c   0x000000a4   Code   RO         5985    i.HAL_PWREx_EnableOverDrive  rm_infantry1_3.lib(stm32f4xx_hal_pwr_ex.o)
+    0x08001fe0   0x08001fe0   0x00000370   Code   RO         6053    i.HAL_RCCEx_PeriphCLKConfig  rm_infantry1_3.lib(stm32f4xx_hal_rcc_ex.o)
+    0x08002350   0x08002350   0x000001d0   Code   RO         4045    i.HAL_RCC_ClockConfig  rm_infantry1_3.lib(stm32f4xx_hal_rcc.o)
+    0x08002520   0x08002520   0x00000044   Code   RO         4049    i.HAL_RCC_GetClockConfig  rm_infantry1_3.lib(stm32f4xx_hal_rcc.o)
+    0x08002564   0x08002564   0x0000000c   Code   RO         4050    i.HAL_RCC_GetHCLKFreq  rm_infantry1_3.lib(stm32f4xx_hal_rcc.o)
+    0x08002570   0x08002570   0x0000002c   Code   RO         4052    i.HAL_RCC_GetPCLK1Freq  rm_infantry1_3.lib(stm32f4xx_hal_rcc.o)
+    0x0800259c   0x0800259c   0x0000002c   Code   RO         4053    i.HAL_RCC_GetPCLK2Freq  rm_infantry1_3.lib(stm32f4xx_hal_rcc.o)
+    0x080025c8   0x080025c8   0x000000b4   Code   RO         4054    i.HAL_RCC_GetSysClockFreq  rm_infantry1_3.lib(stm32f4xx_hal_rcc.o)
+    0x0800267c   0x0800267c   0x0000044c   Code   RO         4057    i.HAL_RCC_OscConfig  rm_infantry1_3.lib(stm32f4xx_hal_rcc.o)
+    0x08002ac8   0x08002ac8   0x00000012   Code   RO         6472    i.HAL_RTCEx_BKUPRead  rm_infantry1_3.lib(stm32f4xx_hal_rtc_ex.o)
+    0x08002ada   0x08002ada   0x00000012   Code   RO         6473    i.HAL_RTCEx_BKUPWrite  rm_infantry1_3.lib(stm32f4xx_hal_rtc_ex.o)
+    0x08002aec   0x08002aec   0x000000fe   Code   RO         6498    i.HAL_RTCEx_SetWakeUpTimer  rm_infantry1_3.lib(stm32f4xx_hal_rtc_ex.o)
+    0x08002bea   0x08002bea   0x00000002   PAD
+    0x08002bec   0x08002bec   0x000000b4   Code   RO         6341    i.HAL_RTC_Init      rm_infantry1_3.lib(stm32f4xx_hal_rtc.o)
+    0x08002ca0   0x08002ca0   0x00000018   Code   RO         6268    i.HAL_RTC_MspInit   rm_infantry1_3.lib(rtc.o)
+    0x08002cb8   0x08002cb8   0x00000114   Code   RO         6347    i.HAL_RTC_SetDate   rm_infantry1_3.lib(stm32f4xx_hal_rtc.o)
+    0x08002dcc   0x08002dcc   0x00000134   Code   RO         6348    i.HAL_RTC_SetTime   rm_infantry1_3.lib(stm32f4xx_hal_rtc.o)
+    0x08002f00   0x08002f00   0x0000003a   Code   RO         6349    i.HAL_RTC_WaitForSynchro  rm_infantry1_3.lib(stm32f4xx_hal_rtc.o)
+    0x08002f3a   0x08002f3a   0x0000008c   Code   RO         4396    i.HAL_SPI_Init      rm_infantry1_3.lib(stm32f4xx_hal_spi.o)
+    0x08002fc6   0x08002fc6   0x00000002   PAD
+    0x08002fc8   0x08002fc8   0x0000005c   Code   RO         5896    i.HAL_SPI_MspInit   rm_infantry1_3.lib(spi.o)
+    0x08003024   0x08003024   0x0000021e   Code   RO         4405    i.HAL_SPI_TransmitReceive  rm_infantry1_3.lib(stm32f4xx_hal_spi.o)
+    0x08003242   0x08003242   0x00000028   Code   RO         4834    i.HAL_SYSTICK_CLKSourceConfig  rm_infantry1_3.lib(stm32f4xx_hal_cortex.o)
+    0x0800326a   0x0800326a   0x00000034   Code   RO         4836    i.HAL_SYSTICK_Config  rm_infantry1_3.lib(stm32f4xx_hal_cortex.o)
+    0x0800329e   0x0800329e   0x00000002   Code   RO         4146    i.HAL_TIMEx_BreakCallback  rm_infantry1_3.lib(stm32f4xx_hal_tim_ex.o)
+    0x080032a0   0x080032a0   0x00000002   Code   RO         4147    i.HAL_TIMEx_CommutationCallback  rm_infantry1_3.lib(stm32f4xx_hal_tim_ex.o)
+    0x080032a2   0x080032a2   0x0000007e   Code   RO         4148    i.HAL_TIMEx_ConfigBreakDeadTime  rm_infantry1_3.lib(stm32f4xx_hal_tim_ex.o)
+    0x08003320   0x08003320   0x00000062   Code   RO         4163    i.HAL_TIMEx_MasterConfigSynchronization  rm_infantry1_3.lib(stm32f4xx_hal_tim_ex.o)
+    0x08003382   0x08003382   0x00000034   Code   RO         1324    i.HAL_TIM_Base_Init  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
+    0x080033b6   0x080033b6   0x00000002   Code   RO         1326    i.HAL_TIM_Base_MspInit  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
+    0x080033b8   0x080033b8   0x0000001e   Code   RO         1329    i.HAL_TIM_Base_Start_IT  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
+    0x080033d6   0x080033d6   0x00000002   Code   RO         1353    i.HAL_TIM_IC_CaptureCallback  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
+    0x080033d8   0x080033d8   0x00000196   Code   RO         1366    i.HAL_TIM_IRQHandler  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
+    0x0800356e   0x0800356e   0x00000002   PAD
+    0x08003570   0x08003570   0x00000128   Code   RO         5768    i.HAL_TIM_MspPostInit  rm_infantry1_3.lib(tim.o)
+    0x08003698   0x08003698   0x00000002   Code   RO         1369    i.HAL_TIM_OC_DelayElapsedCallback  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
+    0x0800369a   0x0800369a   0x00000108   Code   RO         1390    i.HAL_TIM_PWM_ConfigChannel  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
+    0x080037a2   0x080037a2   0x00000034   Code   RO         1393    i.HAL_TIM_PWM_Init  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
+    0x080037d6   0x080037d6   0x00000002   PAD
+    0x080037d8   0x080037d8   0x00000110   Code   RO         5770    i.HAL_TIM_PWM_MspInit  rm_infantry1_3.lib(tim.o)
+    0x080038e8   0x080038e8   0x00000002   Code   RO         1396    i.HAL_TIM_PWM_PulseFinishedCallback  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
+    0x080038ea   0x080038ea   0x00000002   PAD
+    0x080038ec   0x080038ec   0x0000004c   Code   RO         1397    i.HAL_TIM_PWM_Start  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
+    0x08003938   0x08003938   0x00000018   Code   RO         5846    i.HAL_TIM_PeriodElapsedCallback  rm_infantry1_3.lib(main.o)
+    0x08003950   0x08003950   0x00000002   Code   RO         1407    i.HAL_TIM_TriggerCallback  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
+    0x08003952   0x08003952   0x00000002   Code   RO         2279    i.HAL_UART_ErrorCallback  rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
+    0x08003954   0x08003954   0x0000014c   Code   RO         2282    i.HAL_UART_IRQHandler  rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
+    0x08003aa0   0x08003aa0   0x00000072   Code   RO         2283    i.HAL_UART_Init     rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
+    0x08003b12   0x08003b12   0x00000002   PAD
+    0x08003b14   0x08003b14   0x00000358   Code   RO         3041    i.HAL_UART_MspInit  rm_infantry1_3.lib(usart.o)
+    0x08003e6c   0x08003e6c   0x00000002   Code   RO         2289    i.HAL_UART_RxCpltCallback  rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
+    0x08003e6e   0x08003e6e   0x00000002   Code   RO         2294    i.HAL_UART_TxCpltCallback  rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
+    0x08003e70   0x08003e70   0x00000004   Code   RO          962    i.HardFault_Handler  stm32f4xx_it.o
+    0x08003e74   0x08003e74   0x0000007c   Code   RO         5939    i.MX_ADC1_Init      rm_infantry1_3.lib(adc.o)
+    0x08003ef0   0x08003ef0   0x00000058   Code   RO         2990    i.MX_CAN1_Init      rm_infantry1_3.lib(can.o)
+    0x08003f48   0x08003f48   0x0000005c   Code   RO         2991    i.MX_CAN2_Init      rm_infantry1_3.lib(can.o)
+    0x08003fa4   0x08003fa4   0x00000098   Code   RO         6309    i.MX_DMA_Init       rm_infantry1_3.lib(dma.o)
+    0x0800403c   0x0800403c   0x00000048   Code   RO         3149    i.MX_FREERTOS_Init  rm_infantry1_3.lib(freertos.o)
+    0x08004084   0x08004084   0x000002b4   Code   RO         6243    i.MX_GPIO_Init      rm_infantry1_3.lib(gpio.o)
+    0x08004338   0x08004338   0x000000d0   Code   RO         6269    i.MX_RTC_Init       rm_infantry1_3.lib(rtc.o)
+    0x08004408   0x08004408   0x00000058   Code   RO         5897    i.MX_SPI5_Init      rm_infantry1_3.lib(spi.o)
+    0x08004460   0x08004460   0x0000006c   Code   RO         5771    i.MX_TIM12_Init     rm_infantry1_3.lib(tim.o)
+    0x080044cc   0x080044cc   0x000000c4   Code   RO         5772    i.MX_TIM2_Init      rm_infantry1_3.lib(tim.o)
+    0x08004590   0x08004590   0x000000a0   Code   RO         5773    i.MX_TIM3_Init      rm_infantry1_3.lib(tim.o)
+    0x08004630   0x08004630   0x000000c8   Code   RO         5774    i.MX_TIM4_Init      rm_infantry1_3.lib(tim.o)
+    0x080046f8   0x080046f8   0x000000c8   Code   RO         5775    i.MX_TIM5_Init      rm_infantry1_3.lib(tim.o)
+    0x080047c0   0x080047c0   0x00000104   Code   RO         5776    i.MX_TIM8_Init      rm_infantry1_3.lib(tim.o)
+    0x080048c4   0x080048c4   0x0000004c   Code   RO         3042    i.MX_UART7_Init     rm_infantry1_3.lib(usart.o)
+    0x08004910   0x08004910   0x0000004c   Code   RO         3043    i.MX_UART8_Init     rm_infantry1_3.lib(usart.o)
+    0x0800495c   0x0800495c   0x00000050   Code   RO         3044    i.MX_USART1_UART_Init  rm_infantry1_3.lib(usart.o)
+    0x080049ac   0x080049ac   0x0000004c   Code   RO         3045    i.MX_USART3_UART_Init  rm_infantry1_3.lib(usart.o)
+    0x080049f8   0x080049f8   0x0000004c   Code   RO         3046    i.MX_USART6_UART_Init  rm_infantry1_3.lib(usart.o)
+    0x08004a44   0x08004a44   0x00000004   Code   RO          963    i.MemManage_Handler  stm32f4xx_it.o
+    0x08004a48   0x08004a48   0x00000002   Code   RO          964    i.NMI_Handler       stm32f4xx_it.o
+    0x08004a4a   0x08004a4a   0x00000002   PAD
+    0x08004a4c   0x08004a4c   0x00000010   Code   RO         4838    i.NVIC_GetPriorityGrouping  rm_infantry1_3.lib(stm32f4xx_hal_cortex.o)
+    0x08004a5c   0x08004a5c   0x00000028   Code   RO         4839    i.NVIC_SetPriority  rm_infantry1_3.lib(stm32f4xx_hal_cortex.o)
+    0x08004a84   0x08004a84   0x00000016   Code   RO         6350    i.RTC_Bcd2ToByte    rm_infantry1_3.lib(stm32f4xx_hal_rtc.o)
+    0x08004a9a   0x08004a9a   0x0000001a   Code   RO         6351    i.RTC_ByteToBcd2    rm_infantry1_3.lib(stm32f4xx_hal_rtc.o)
+    0x08004ab4   0x08004ab4   0x0000003e   Code   RO         6352    i.RTC_EnterInitMode  rm_infantry1_3.lib(stm32f4xx_hal_rtc.o)
+    0x08004af2   0x08004af2   0x00000028   Code   RO         4420    i.SPI_CheckFlag_BSY  rm_infantry1_3.lib(stm32f4xx_hal_spi.o)
+    0x08004b1a   0x08004b1a   0x000000aa   Code   RO         4438    i.SPI_WaitFlagStateUntilTimeout  rm_infantry1_3.lib(stm32f4xx_hal_spi.o)
+    0x08004bc4   0x08004bc4   0x0000000a   Code   RO         3150    i.StartDefaultTask  rm_infantry1_3.lib(freertos.o)
+    0x08004bce   0x08004bce   0x00000008   Code   RO          965    i.SysTick_Handler   stm32f4xx_it.o
+    0x08004bd6   0x08004bd6   0x00000002   PAD
+    0x08004bd8   0x08004bd8   0x00000108   Code   RO         5847    i.SystemClock_Config  rm_infantry1_3.lib(main.o)
+    0x08004ce0   0x08004ce0   0x00000064   Code   RO         3792    i.SystemInit        rm_infantry1_3.lib(system_stm32f4xx.o)
+    0x08004d44   0x08004d44   0x00000010   Code   RO          966    i.TIM6_DAC_IRQHandler  stm32f4xx_it.o
+    0x08004d54   0x08004d54   0x000000e4   Code   RO         1408    i.TIM_Base_SetConfig  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
+    0x08004e38   0x08004e38   0x0000001c   Code   RO         1409    i.TIM_CCxChannelCmd  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
+    0x08004e54   0x08004e54   0x00000070   Code   RO         1417    i.TIM_OC1_SetConfig  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
+    0x08004ec4   0x08004ec4   0x00000078   Code   RO         1418    i.TIM_OC2_SetConfig  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
+    0x08004f3c   0x08004f3c   0x00000078   Code   RO         1419    i.TIM_OC3_SetConfig  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
+    0x08004fb4   0x08004fb4   0x00000060   Code   RO         1420    i.TIM_OC4_SetConfig  rm_infantry1_3.lib(stm32f4xx_hal_tim.o)
+    0x08005014   0x08005014   0x00000014   Code   RO          967    i.UART7_IRQHandler  stm32f4xx_it.o
+    0x08005028   0x08005028   0x00000014   Code   RO          968    i.UART8_IRQHandler  stm32f4xx_it.o
+    0x0800503c   0x0800503c   0x00000014   Code   RO         2296    i.UART_DMAAbortOnError  rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
+    0x08005050   0x08005050   0x00000020   Code   RO         2306    i.UART_EndRxTransfer  rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
+    0x08005070   0x08005070   0x00000020   Code   RO         2307    i.UART_EndTransmit_IT  rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
+    0x08005090   0x08005090   0x0000009a   Code   RO         2309    i.UART_Receive_IT   rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
+    0x0800512a   0x0800512a   0x00000002   PAD
+    0x0800512c   0x0800512c   0x00000368   Code   RO         2310    i.UART_SetConfig    rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
+    0x08005494   0x08005494   0x00000068   Code   RO         2311    i.UART_Transmit_IT  rm_infantry1_3.lib(stm32f4xx_hal_uart.o)
+    0x080054fc   0x080054fc   0x00000014   Code   RO          969    i.USART1_IRQHandler  stm32f4xx_it.o
+    0x08005510   0x08005510   0x00000014   Code   RO          970    i.USART3_IRQHandler  stm32f4xx_it.o
+    0x08005524   0x08005524   0x00000014   Code   RO          971    i.USART6_IRQHandler  stm32f4xx_it.o
+    0x08005538   0x08005538   0x00000004   Code   RO          972    i.UsageFault_Handler  stm32f4xx_it.o
+    0x0800553c   0x0800553c   0x00000004   Code   RO         5848    i._Error_Handler    rm_infantry1_3.lib(main.o)
+    0x08005540   0x08005540   0x00000030   Code   RO         6839    i.__ARM_fpclassify  m_wm.l(fpclassify.o)
+    0x08005570   0x08005570   0x00000360   Code   RO         6726    i.__hardfp_asin     m_wm.l(asin.o)
+    0x080058d0   0x080058d0   0x000002d8   Code   RO         6808    i.__hardfp_atan     m_wm.l(atan.o)
+    0x08005ba8   0x08005ba8   0x000001f0   Code   RO         6740    i.__hardfp_atan2    m_wm.l(atan2.o)
+    0x08005d98   0x08005d98   0x0000007a   Code   RO         6770    i.__hardfp_sqrt     m_wm.l(sqrt.o)
+    0x08005e12   0x08005e12   0x000000f8   Code   RO         6841    i.__kernel_poly     m_wm.l(poly.o)
+    0x08005f0a   0x08005f0a   0x00000014   Code   RO         6826    i.__mathlib_dbl_infnan  m_wm.l(dunder.o)
+    0x08005f1e   0x08005f1e   0x00000014   Code   RO         6827    i.__mathlib_dbl_infnan2  m_wm.l(dunder.o)
+    0x08005f32   0x08005f32   0x00000006   PAD
+    0x08005f38   0x08005f38   0x00000020   Code   RO         6828    i.__mathlib_dbl_invalid  m_wm.l(dunder.o)
+    0x08005f58   0x08005f58   0x00000020   Code   RO         6831    i.__mathlib_dbl_underflow  m_wm.l(dunder.o)
+    0x08005f78   0x08005f78   0x0000002e   Code   RO          330    i.abs_limit         pid.o
+    0x08005fa6   0x08005fa6   0x00000010   Code   RO         6810    i.atan              m_wm.l(atan.o)
+    0x08005fb6   0x08005fb6   0x00000002   PAD
+    0x08005fb8   0x08005fb8   0x00000168   Code   RO            4    i.can1_recv_callback  can_device.o
+    0x08006120   0x08006120   0x00000068   Code   RO         3363    i.can_device_init   rm_infantry1_3.lib(bsp_can.o)
+    0x08006188   0x08006188   0x0000001c   Code   RO         3364    i.can_receive_start  rm_infantry1_3.lib(bsp_can.o)
+    0x080061a4   0x080061a4   0x00000018   Code   RO         3365    i.can_recv_callback_register  rm_infantry1_3.lib(bsp_can.o)
+    0x080061bc   0x080061bc   0x0000001c   Code   RO          200    i.dbus_uart_callback  uart_device.o
+    0x080061d8   0x080061d8   0x0000002c   Code   RO         3668    i.digital_tube_init  rm_infantry1_3.lib(bsp_io.o)
+    0x08006204   0x08006204   0x000000b8   Code   RO         3669    i.display_num       rm_infantry1_3.lib(bsp_io.o)
+    0x080062bc   0x080062bc   0x000000d0   Code   RO            6    i.encoder_data_handle  can_device.o
+    0x0800638c   0x0800638c   0x00000028   Code   RO          691    i.err_detector_hook  detect_task.o
+    0x080063b4   0x080063b4   0x00000030   Code   RO          739    i.execute_task      execute_task.o
+    0x080063e4   0x080063e4   0x00000018   Code   RO         6754    i.fabs              m_wm.l(fabs.o)
+    0x080063fc   0x080063fc   0x00000010   Code   RO            7    i.get_moto_offset   can_device.o
+    0x0800640c   0x0800640c   0x000007e0   Code   RO         3532    i.imu_AHRS_update   rm_infantry1_3.lib(bsp_imu.o)
+    0x08006bec   0x08006bec   0x00000344   Code   RO         3533    i.imu_attitude_update  rm_infantry1_3.lib(bsp_imu.o)
+    0x08006f30   0x08006f30   0x00000034   Code   RO         3534    i.imu_task          rm_infantry1_3.lib(bsp_imu.o)
+    0x08006f64   0x08006f64   0x0000009c   Code   RO          413    i.init_setup        startup.o
+    0x08007000   0x08007000   0x0000003c   Code   RO         3535    i.invSqrt           rm_infantry1_3.lib(bsp_imu.o)
+    0x0800703c   0x0800703c   0x00000100   Code   RO         3537    i.ist8310_init      rm_infantry1_3.lib(bsp_imu.o)
+    0x0800713c   0x0800713c   0x0000003a   Code   RO         3538    i.ist_reg_read_by_mpu  rm_infantry1_3.lib(bsp_imu.o)
+    0x08007176   0x08007176   0x00000040   Code   RO         3539    i.ist_reg_write_by_mpu  rm_infantry1_3.lib(bsp_imu.o)
+    0x080071b6   0x080071b6   0x00000002   PAD
+    0x080071b8   0x080071b8   0x000000b0   Code   RO         5849    i.main              rm_infantry1_3.lib(main.o)
+    0x08007268   0x08007268   0x0000000e   Code   RO         2590    i.makeFreeRtosPriority  rm_infantry1_3.lib(cmsis_os.o)
+    0x08007276   0x08007276   0x00000002   PAD
+    0x08007278   0x08007278   0x00000068   Code   RO         3540    i.mpu_device_init   rm_infantry1_3.lib(bsp_imu.o)
+    0x080072e0   0x080072e0   0x000001e8   Code   RO         3541    i.mpu_get_data      rm_infantry1_3.lib(bsp_imu.o)
+    0x080074c8   0x080074c8   0x0000008c   Code   RO         3542    i.mpu_mst_i2c_auto_read_config  rm_infantry1_3.lib(bsp_imu.o)
+    0x08007554   0x08007554   0x00000130   Code   RO         3543    i.mpu_offset_cal    rm_infantry1_3.lib(bsp_imu.o)
+    0x08007684   0x08007684   0x00000054   Code   RO         3544    i.mpu_read_reg      rm_infantry1_3.lib(bsp_imu.o)
+    0x080076d8   0x080076d8   0x00000064   Code   RO         3545    i.mpu_read_regs     rm_infantry1_3.lib(bsp_imu.o)
+    0x0800773c   0x0800773c   0x00000058   Code   RO         3546    i.mpu_write_reg     rm_infantry1_3.lib(bsp_imu.o)
+    0x08007794   0x08007794   0x00000018   Code   RO         2592    i.osDelay           rm_infantry1_3.lib(cmsis_os.o)
+    0x080077ac   0x080077ac   0x0000000a   Code   RO         2595    i.osKernelStart     rm_infantry1_3.lib(cmsis_os.o)
+    0x080077b6   0x080077b6   0x00000010   Code   RO         2628    i.osSystickHandler  rm_infantry1_3.lib(cmsis_os.o)
+    0x080077c6   0x080077c6   0x00000030   Code   RO         2629    i.osThreadCreate    rm_infantry1_3.lib(cmsis_os.o)
+    0x080077f6   0x080077f6   0x000000ae   Code   RO          331    i.pid_calc          pid.o
+    0x080078a4   0x080078a4   0x00000012   Code   RO          332    i.pid_init          pid.o
+    0x080078b6   0x080078b6   0x00000002   PAD
+    0x080078b8   0x080078b8   0x00000098   Code   RO         5198    i.prvAddCurrentTaskToDelayedList  rm_infantry1_3.lib(tasks.o)
+    0x08007950   0x08007950   0x000000b4   Code   RO         5199    i.prvAddNewTaskToReadyList  rm_infantry1_3.lib(tasks.o)
+    0x08007a04   0x08007a04   0x00000064   Code   RO         5200    i.prvCheckTasksWaitingTermination  rm_infantry1_3.lib(tasks.o)
+    0x08007a68   0x08007a68   0x00000012   Code   RO         5201    i.prvDeleteTCB      rm_infantry1_3.lib(tasks.o)
+    0x08007a7a   0x08007a7a   0x00000002   PAD
+    0x08007a7c   0x08007a7c   0x0000007c   Code   RO         5127    i.prvHeapInit       rm_infantry1_3.lib(heap_4.o)
+    0x08007af8   0x08007af8   0x00000028   Code   RO         5202    i.prvIdleTask       rm_infantry1_3.lib(tasks.o)
+    0x08007b20   0x08007b20   0x000000b4   Code   RO         5203    i.prvInitialiseNewTask  rm_infantry1_3.lib(tasks.o)
+    0x08007bd4   0x08007bd4   0x00000068   Code   RO         5204    i.prvInitialiseTaskLists  rm_infantry1_3.lib(tasks.o)
+    0x08007c3c   0x08007c3c   0x00000068   Code   RO         5128    i.prvInsertBlockIntoFreeList  rm_infantry1_3.lib(heap_4.o)
+    0x08007ca4   0x08007ca4   0x00000034   Code   RO         5205    i.prvResetNextTaskUnblockTime  rm_infantry1_3.lib(tasks.o)
+    0x08007cd8   0x08007cd8   0x00000040   Code   RO         5516    i.prvTaskExitError  rm_infantry1_3.lib(port.o)
+    0x08007d18   0x08007d18   0x0000013c   Code   RO         5129    i.pvPortMalloc      rm_infantry1_3.lib(heap_4.o)
+    0x08007e54   0x08007e54   0x0000002c   Code   RO         5517    i.pxPortInitialiseStack  rm_infantry1_3.lib(port.o)
+    0x08007e80   0x08007e80   0x00000010   Code   RO          242    i.read_cali_data    calibrate.o
+    0x08007e90   0x08007e90   0x00000018   Code   RO         3490    i.read_flash        rm_infantry1_3.lib(bsp_flash.o)
+    0x08007ea8   0x08007ea8   0x00000144   Code   RO         3674    i.refresh_digital_tube  rm_infantry1_3.lib(bsp_io.o)
+    0x08007fec   0x08007fec   0x00000178   Code   RO          201    i.remote_data_handle  uart_device.o
+    0x08008164   0x08008164   0x00000184   Code   RO         3676    i.set_digital_io_dir  rm_infantry1_3.lib(bsp_io.o)
+    0x080082e8   0x080082e8   0x00000040   Code   RO         3677    i.set_pwm_group_param  rm_infantry1_3.lib(bsp_io.o)
+    0x08008328   0x08008328   0x000000a8   Code   RO         3678    i.set_pwm_param     rm_infantry1_3.lib(bsp_io.o)
+    0x080083d0   0x080083d0   0x00000030   Code   RO           12    i.set_test_motor_current  can_device.o
+    0x08008400   0x08008400   0x0000006e   Code   RO         6772    i.sqrt              m_wm.l(sqrt.o)
+    0x0800846e   0x0800846e   0x00000002   PAD
+    0x08008470   0x08008470   0x000000d4   Code   RO         3679    i.start_pwm_output  rm_infantry1_3.lib(bsp_io.o)
+    0x08008544   0x08008544   0x00000028   Code   RO          414    i.sys_start_task    startup.o
+    0x0800856c   0x0800856c   0x000000c0   Code   RO          918    i.test_moto_control  test_custom.o
+    0x0800862c   0x0800862c   0x00000024   Code   RO          919    i.test_moto_init    test_custom.o
+    0x08008650   0x08008650   0x00000114   Code   RO         3427    i.uart_init         rm_infantry1_3.lib(bsp_uart.o)
+    0x08008764   0x08008764   0x0000005c   Code   RO         3428    i.uart_receive_no_dma_it  rm_infantry1_3.lib(bsp_uart.o)
+    0x080087c0   0x080087c0   0x00000078   Code   RO         3429    i.uart_receive_start  rm_infantry1_3.lib(bsp_uart.o)
+    0x08008838   0x08008838   0x00000038   Code   RO         3430    i.uart_recv_callback_register  rm_infantry1_3.lib(bsp_uart.o)
+    0x08008870   0x08008870   0x0000043c   Code   RO         3431    i.uart_recv_interrupt_callback  rm_infantry1_3.lib(bsp_uart.o)
+    0x08008cac   0x08008cac   0x00000028   Code   RO         6195    i.uxListRemove      rm_infantry1_3.lib(list.o)
+    0x08008cd4   0x08008cd4   0x00000004   Code   RO         3151    i.vApplicationStackOverflowHook  rm_infantry1_3.lib(freertos.o)
+    0x08008cd8   0x08008cd8   0x0000001a   Code   RO         6196    i.vListInitialise   rm_infantry1_3.lib(list.o)
+    0x08008cf2   0x08008cf2   0x00000006   Code   RO         6197    i.vListInitialiseItem  rm_infantry1_3.lib(list.o)
+    0x08008cf8   0x08008cf8   0x00000034   Code   RO         6198    i.vListInsert       rm_infantry1_3.lib(list.o)
+    0x08008d2c   0x08008d2c   0x00000018   Code   RO         6199    i.vListInsertEnd    rm_infantry1_3.lib(list.o)
+    0x08008d44   0x08008d44   0x00000054   Code   RO         5519    i.vPortEnterCritical  rm_infantry1_3.lib(port.o)
+    0x08008d98   0x08008d98   0x0000003c   Code   RO         5520    i.vPortExitCritical  rm_infantry1_3.lib(port.o)
+    0x08008dd4   0x08008dd4   0x00000094   Code   RO         5130    i.vPortFree         rm_infantry1_3.lib(heap_4.o)
+    0x08008e68   0x08008e68   0x00000020   Code   RO         5521    i.vPortSetupTimerInterrupt  rm_infantry1_3.lib(port.o)
+    0x08008e88   0x08008e88   0x0000005c   Code   RO         5215    i.vTaskDelay        rm_infantry1_3.lib(tasks.o)
+    0x08008ee4   0x08008ee4   0x00000088   Code   RO         5227    i.vTaskStartScheduler  rm_infantry1_3.lib(tasks.o)
+    0x08008f6c   0x08008f6c   0x00000010   Code   RO         5229    i.vTaskSuspendAll   rm_infantry1_3.lib(tasks.o)
+    0x08008f7c   0x08008f7c   0x000000a8   Code   RO         5230    i.vTaskSwitchContext  rm_infantry1_3.lib(tasks.o)
+    0x08009024   0x08009024   0x000000e4   Code   RO         3367    i.write_can         rm_infantry1_3.lib(bsp_can.o)
+    0x08009108   0x08009108   0x000000b0   Code   RO         3682    i.write_digital_io  rm_infantry1_3.lib(bsp_io.o)
+    0x080091b8   0x080091b8   0x000000dc   Code   RO         3683    i.write_led_io      rm_infantry1_3.lib(bsp_io.o)
+    0x08009294   0x08009294   0x0000013c   Code   RO         5523    i.xPortStartScheduler  rm_infantry1_3.lib(port.o)
+    0x080093d0   0x080093d0   0x00000034   Code   RO         5524    i.xPortSysTickHandler  rm_infantry1_3.lib(port.o)
+    0x08009404   0x08009404   0x00000060   Code   RO         5232    i.xTaskCreate       rm_infantry1_3.lib(tasks.o)
+    0x08009464   0x08009464   0x00000020   Code   RO         5236    i.xTaskGetSchedulerState  rm_infantry1_3.lib(tasks.o)
+    0x08009484   0x08009484   0x00000148   Code   RO         5239    i.xTaskIncrementTick  rm_infantry1_3.lib(tasks.o)
+    0x080095cc   0x080095cc   0x00000104   Code   RO         5245    i.xTaskResumeAll    rm_infantry1_3.lib(tasks.o)
+    0x080096d0   0x080096d0   0x00000018   Code   RO         6787    x$fpl$basic         fz_wm.l(basic.o)
+    0x080096e8   0x080096e8   0x00000062   Code   RO         6708    x$fpl$d2f           fz_wm.l(d2f.o)
+    0x0800974a   0x0800974a   0x00000002   PAD
+    0x0800974c   0x0800974c   0x00000150   Code   RO         6789    x$fpl$dadd          fz_wm.l(daddsub_clz.o)
+    0x0800989c   0x0800989c   0x000002b0   Code   RO         6711    x$fpl$ddiv          fz_wm.l(ddiv.o)
+    0x08009b4c   0x08009b4c   0x00000154   Code   RO         6722    x$fpl$dmul          fz_wm.l(dmul.o)
+    0x08009ca0   0x08009ca0   0x0000009c   Code   RO         6797    x$fpl$dnaninf       fz_wm.l(dnaninf.o)
+    0x08009d3c   0x08009d3c   0x0000000c   Code   RO         6799    x$fpl$dretinf       fz_wm.l(dretinf.o)
+    0x08009d48   0x08009d48   0x00000016   Code   RO         6790    x$fpl$drsb          fz_wm.l(daddsub_clz.o)
+    0x08009d5e   0x08009d5e   0x00000002   PAD
+    0x08009d60   0x08009d60   0x00000198   Code   RO         6801    x$fpl$dsqrt         fz_wm.l(dsqrt_umaal.o)
+    0x08009ef8   0x08009ef8   0x000001d4   Code   RO         6791    x$fpl$dsub          fz_wm.l(daddsub_clz.o)
+    0x0800a0cc   0x0800a0cc   0x00000056   Code   RO         6724    x$fpl$f2d           fz_wm.l(f2d.o)
+    0x0800a122   0x0800a122   0x0000008c   Code   RO         6803    x$fpl$fnaninf       fz_wm.l(fnaninf.o)
+    0x0800a1ae   0x0800a1ae   0x0000000a   Code   RO         6957    x$fpl$fpinit        fz_wm.l(fpinit.o)
+    0x0800a1b8   0x0800a1b8   0x0000000a   Code   RO         6805    x$fpl$fretinf       fz_wm.l(fretinf.o)
+    0x0800a1c2   0x0800a1c2   0x00000000   Code   RO         6807    x$fpl$usenofp       fz_wm.l(usenofp.o)
+    0x0800a1c2   0x0800a1c2   0x00000002   PAD
+    0x0800a1c4   0x0800a1c4   0x00000014   Data   RO          415    .constdata          startup.o
+    0x0800a1d8   0x0800a1d8   0x00000008   Data   RO         1120    .constdata          rm_infantry1_3.lib(stm32f4xx_hal_dma.o)
+    0x0800a1e0   0x0800a1e0   0x00000028   Data   RO         3152    .constdata          rm_infantry1_3.lib(freertos.o)
+    0x0800a208   0x0800a208   0x0000000e   Data   RO         3548    .constdata          rm_infantry1_3.lib(bsp_imu.o)
+    0x0800a216   0x0800a216   0x00000018   Data   RO         3793    .constdata          rm_infantry1_3.lib(system_stm32f4xx.o)
+    0x0800a22e   0x0800a22e   0x00000002   PAD
+    0x0800a230   0x0800a230   0x00000050   Data   RO         6729    .constdata          m_wm.l(asin.o)
+    0x0800a280   0x0800a280   0x00000098   Data   RO         6811    .constdata          m_wm.l(atan.o)
+    0x0800a318   0x0800a318   0x00000008   Data   RO         6843    .constdata          m_wm.l(qnan.o)
+    0x0800a320   0x0800a320   0x00000008   Data   RO          416    .conststring        startup.o
+    0x0800a328   0x0800a328   0x00000014   Data   RO         3153    .conststring        rm_infantry1_3.lib(freertos.o)
+    0x0800a33c   0x0800a33c   0x00000020   Data   RO         7025    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00005f90, Max: 0x00030000, ABSOLUTE, COMPRESSED[0x00000018])
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x0800a35c, Size: 0x00005f90, Max: 0x00030000, ABSOLUTE, COMPRESSED[0x00000018])
 
-    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x00000028   Data   RW           14    .data               can_device.o
-    0x20000028   0x00000006   Data   RW          920    .data               test_custom.o
-    0x2000002e   0x00000002   PAD
-    0x20000030   0x00000004   Data   RW         1987    .data               rm_infantry1_3.lib(stm32f4xx_hal.o)
-    0x20000034   0x00000004   Data   RW         2993    .data               rm_infantry1_3.lib(can.o)
-    0x20000038   0x0000001c   Data   RW         3154    .data               rm_infantry1_3.lib(freertos.o)
-    0x20000054   0x00000008   Data   RW         3369    .data               rm_infantry1_3.lib(bsp_can.o)
-    0x2000005c   0x00000084   Data   RW         3549    .data               rm_infantry1_3.lib(bsp_imu.o)
-    0x200000e0   0x00000004   Data   RW         3794    .data               rm_infantry1_3.lib(system_stm32f4xx.o)
-    0x200000e4   0x00000018   Data   RW         5135    .data               rm_infantry1_3.lib(heap_4.o)
-    0x200000fc   0x0000003c   Data   RW         5248    .data               rm_infantry1_3.lib(tasks.o)
-    0x20000138   0x0000000c   Data   RW         5525    .data               rm_infantry1_3.lib(port.o)
-    0x20000144   0x000001e0   Zero   RW           13    .bss                can_device.o
-    0x20000324   0x00000026   Zero   RW          202    .bss                uart_device.o
-    0x2000034a   0x0000000b   Zero   RW          244    .bss                calibrate.o
-    0x20000355   0x00000003   PAD
-    0x20000358   0x00000270   Zero   RW          334    .bss                pid.o
-    0x200005c8   0x00000056   Zero   RW          694    .bss                detect_task.o
-    0x2000061e   0x00000002   PAD
-    0x20000620   0x00000088   Zero   RW         2992    .bss                rm_infantry1_3.lib(can.o)
-    0x200006a8   0x00000320   Zero   RW         3047    .bss                rm_infantry1_3.lib(usart.o)
-    0x200009c8   0x0000003c   Zero   RW         3112    .bss                rm_infantry1_3.lib(stm32f4xx_hal_timebase_tim.o)
-    0x20000a04   0x00000080   Zero   RW         3368    .bss                rm_infantry1_3.lib(bsp_can.o)
-    0x20000a84   0x00000014   Zero   RW         3433    .bss                rm_infantry1_3.lib(bsp_uart.o)
-    0x20000a98   0x0000007c   Zero   RW         3547    .bss                rm_infantry1_3.lib(bsp_imu.o)
-    0x20000b14   0x00003c00   Zero   RW         5134    .bss                rm_infantry1_3.lib(heap_4.o)
-    0x20004714   0x000000f0   Zero   RW         5247    .bss                rm_infantry1_3.lib(tasks.o)
-    0x20004804   0x00000168   Zero   RW         5777    .bss                rm_infantry1_3.lib(tim.o)
-    0x2000496c   0x00000058   Zero   RW         5898    .bss                rm_infantry1_3.lib(spi.o)
-    0x200049c4   0x00000048   Zero   RW         5940    .bss                rm_infantry1_3.lib(adc.o)
-    0x20004a0c   0x00000020   Zero   RW         6270    .bss                rm_infantry1_3.lib(rtc.o)
-    0x20004a2c   0x00000060   Zero   RW         6880    .bss                c_w.l(libspace.o)
-    0x20004a8c   0x00000004   PAD
-    0x20004a90   0x00000500   Zero   RW         6893    HEAP                rm_infantry1_3.lib(startup_stm32f427xx.o)
-    0x20004f90   0x00001000   Zero   RW         6892    STACK               rm_infantry1_3.lib(startup_stm32f427xx.o)
+    0x20000000   COMPRESSED   0x00000028   Data   RW           14    .data               can_device.o
+    0x20000028   COMPRESSED   0x00000006   Data   RW          920    .data               test_custom.o
+    0x2000002e   COMPRESSED   0x00000002   PAD
+    0x20000030   COMPRESSED   0x00000004   Data   RW         1987    .data               rm_infantry1_3.lib(stm32f4xx_hal.o)
+    0x20000034   COMPRESSED   0x00000004   Data   RW         2993    .data               rm_infantry1_3.lib(can.o)
+    0x20000038   COMPRESSED   0x0000001c   Data   RW         3154    .data               rm_infantry1_3.lib(freertos.o)
+    0x20000054   COMPRESSED   0x00000008   Data   RW         3369    .data               rm_infantry1_3.lib(bsp_can.o)
+    0x2000005c   COMPRESSED   0x00000084   Data   RW         3549    .data               rm_infantry1_3.lib(bsp_imu.o)
+    0x200000e0   COMPRESSED   0x00000004   Data   RW         3794    .data               rm_infantry1_3.lib(system_stm32f4xx.o)
+    0x200000e4   COMPRESSED   0x00000018   Data   RW         5135    .data               rm_infantry1_3.lib(heap_4.o)
+    0x200000fc   COMPRESSED   0x0000003c   Data   RW         5248    .data               rm_infantry1_3.lib(tasks.o)
+    0x20000138   COMPRESSED   0x0000000c   Data   RW         5525    .data               rm_infantry1_3.lib(port.o)
+    0x20000144        -       0x000001e0   Zero   RW           13    .bss                can_device.o
+    0x20000324        -       0x00000026   Zero   RW          202    .bss                uart_device.o
+    0x2000034a        -       0x0000000b   Zero   RW          244    .bss                calibrate.o
+    0x20000355   COMPRESSED   0x00000003   PAD
+    0x20000358        -       0x00000270   Zero   RW          334    .bss                pid.o
+    0x200005c8        -       0x00000056   Zero   RW          694    .bss                detect_task.o
+    0x2000061e   COMPRESSED   0x00000002   PAD
+    0x20000620        -       0x00000088   Zero   RW         2992    .bss                rm_infantry1_3.lib(can.o)
+    0x200006a8        -       0x00000320   Zero   RW         3047    .bss                rm_infantry1_3.lib(usart.o)
+    0x200009c8        -       0x0000003c   Zero   RW         3112    .bss                rm_infantry1_3.lib(stm32f4xx_hal_timebase_tim.o)
+    0x20000a04        -       0x00000080   Zero   RW         3368    .bss                rm_infantry1_3.lib(bsp_can.o)
+    0x20000a84        -       0x00000014   Zero   RW         3433    .bss                rm_infantry1_3.lib(bsp_uart.o)
+    0x20000a98        -       0x0000007c   Zero   RW         3547    .bss                rm_infantry1_3.lib(bsp_imu.o)
+    0x20000b14        -       0x00003c00   Zero   RW         5134    .bss                rm_infantry1_3.lib(heap_4.o)
+    0x20004714        -       0x000000f0   Zero   RW         5247    .bss                rm_infantry1_3.lib(tasks.o)
+    0x20004804        -       0x00000168   Zero   RW         5777    .bss                rm_infantry1_3.lib(tim.o)
+    0x2000496c        -       0x00000058   Zero   RW         5898    .bss                rm_infantry1_3.lib(spi.o)
+    0x200049c4        -       0x00000048   Zero   RW         5940    .bss                rm_infantry1_3.lib(adc.o)
+    0x20004a0c        -       0x00000020   Zero   RW         6270    .bss                rm_infantry1_3.lib(rtc.o)
+    0x20004a2c        -       0x00000060   Zero   RW         6880    .bss                c_w.l(libspace.o)
+    0x20004a8c   COMPRESSED   0x00000004   PAD
+    0x20004a90        -       0x00000500   Zero   RW         6893    HEAP                rm_infantry1_3.lib(startup_stm32f427xx.o)
+    0x20004f90        -       0x00001000   Zero   RW         6892    STACK               rm_infantry1_3.lib(startup_stm32f427xx.o)
 
 
 ==============================================================================
@@ -4179,18 +4179,18 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-        16          4          0          0         11       1277   calibrate.o
-       632         38          0         40        480      10885   can_device.o
-        40          4          0          0         86       1658   detect_task.o
-        48          8          0          0          0        563   execute_task.o
-       238          0          0          0        624       3392   pid.o
-       196         28         28          0          0      19268   startup.o
-       288         80          0          0          0      10951   stm32f4xx_it.o
-       228         42          0          6          0       1733   test_custom.o
-       404         10          0          0         38       2768   uart_device.o
+        16          4          0          0         11       1209   calibrate.o
+       632         38          0         40        480      10645   can_device.o
+        40          4          0          0         86       1590   detect_task.o
+        48          8          0          0          0        539   execute_task.o
+       238          0          0          0        624       3260   pid.o
+       196         28         28          0          0      19056   startup.o
+       288         80          0          0          0      10459   stm32f4xx_it.o
+       228         42          0          6          0       1653   test_custom.o
+       404         10          0          0         38       2672   uart_device.o
 
     ----------------------------------------------------------------------
-      2096        214         60         48       1244      52495   Object Totals
+      2096        214         60         48       1244      51083   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          6          0          0          2          5          0   (incl. Padding)
 
@@ -4309,8 +4309,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     40984       3062        836        324      24140    1790913   Grand Totals
-     40984       3062        836         24      24140    1790913   ELF Image Totals (compressed)
+     40984       3062        836        324      24140    1789501   Grand Totals
+     40984       3062        836         24      24140    1789501   ELF Image Totals (compressed)
      40984       3062        836         24          0          0   ROM Totals
 
 ==============================================================================

@@ -5,6 +5,7 @@
 #include "sys.h"
 
 int16_t test_moto_speed = 0;
+int16_t test_moto_degree = 0;
 int16_t test_moto_current[1];
 uint8_t test_servo;
 uint8_t key1;
@@ -15,10 +16,23 @@ void test_moto_control(void)
 	 write_led_io(LED_IO1,LED_ON );	
 	
    //电机的速度给定
-   test_moto_speed = rc.ch2 / RC_MAX_VALUE * MAX_WHEEL_RPM;
-  
+   //test_moto_speed = rc.ch2 / RC_MAX_VALUE * MAX_WHEEL_RPM;
+   switch(rc.ch2){
+     case 1:
+       test_moto_degree = 1000;
+       break;
+     case 3:
+       test_moto_degree = 2000;
+       break;
+     case 2:
+       test_moto_degree = 3000;
+       break;
+     default:
+       break;
+   
+   } 
    //闭环计算电机电流
-   test_moto_current[0] = pid_calc(&pid_test_moto, moto_test.speed_rpm, test_moto_speed);
+   test_moto_current[0] = pid_calc(&pid_test_moto, moto_test.total_angle, test_moto_degree);
    
    //发送电机的电流
    set_test_motor_current(test_moto_current);
