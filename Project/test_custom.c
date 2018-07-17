@@ -17,15 +17,15 @@ void test_moto_control(void)
 	
    //电机的速度给定
    //test_moto_speed = rc.ch2 / RC_MAX_VALUE * MAX_WHEEL_RPM;
-   switch(rc.ch2){
+   switch(rc.sw2){
      case 1:
-       test_moto_degree = 1000;
+       test_moto_degree = 10000;
        break;
      case 3:
-       test_moto_degree = 2000;
+       test_moto_degree = 20000;
        break;
      case 2:
-       test_moto_degree = 3000;
+       test_moto_degree = 30000;
        break;
      default:
        break;
@@ -67,6 +67,6 @@ void test_moto_control(void)
    void test_moto_init(void)
    {
    //PID参数初始化		 
-	     pid_init(&pid_test_moto, 7000, 0, 1, 0, 0);
+	     pid_init(&pid_test_moto, 7000, 0, 1.9, 0.005, 50);
 
    }
