@@ -10,13 +10,12 @@
       <TargetName>rm_infantry</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
-      <uAC6>0</uAC6>
+      <pCCUsed>5060183::V5.06 update 2 (build 183)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F427IIHx</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F4xx_DFP.2.13.0</PackID>
+          <PackID>Keil.STM32F4xx_DFP.2.9.0</PackID>
           <PackURL>http://www.keil.com/pack</PackURL>
           <Cpu>IRAM(0x20000000-0x2002FFFF) IRAM2(0x10000000-0x1000FFFF) IROM(0x8000000-0x81FFFFF) CLOCK(25000000) FPU2 CPUTYPE("Cortex-M4")</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -52,7 +51,7 @@
           <OutputName>rm_infantry</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
-          <CreateHexFile>0</CreateHexFile>
+          <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\output\</ListingPath>
@@ -324,7 +323,6 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>0</uC99>
-            <uGnu>0</uGnu>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
             <v6LangP>1</v6LangP>
@@ -332,7 +330,6 @@
             <vShortWch>1</vShortWch>
             <v6Lto>0</v6Lto>
             <v6WtE>0</v6WtE>
-            <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls>--C99</MiscControls>
               <Define>USE_HAL_DRIVER,STM32F427xx</Define>
@@ -350,7 +347,6 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -451,16 +447,6 @@
               <FileType>1</FileType>
               <FilePath>..\User\app\execute_task.c</FilePath>
             </File>
-            <File>
-              <FileName>arm_task.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\arm_task.c</FilePath>
-            </File>
-            <File>
-              <FileName>arm_task.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\arm_task.h</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -502,9 +488,9 @@
               <FilePath>..\Inc\stm32f4xx_it.c</FilePath>
             </File>
             <File>
-              <FileName>rm_infantry1_2.lib</FileName>
+              <FileName>rm_infantry1_3.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>..\Inc\rm_infantry1_2.lib</FilePath>
+              <FilePath>..\Inc\rm_infantry1_3.lib</FilePath>
             </File>
           </Files>
         </Group>
@@ -521,11 +507,5 @@
       </Groups>
     </Target>
   </Targets>
-
-  <RTE>
-    <apis/>
-    <components/>
-    <files/>
-  </RTE>
 
 </Project>

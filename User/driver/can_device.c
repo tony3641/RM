@@ -41,10 +41,6 @@ moto_measure_t moto_trigger;
 moto_measure_t moto_chassis[4];
 /* 外围模块测试电机 */
 moto_measure_t moto_test;
-/*机械臂电机组*/
-//ID5 ID6
-moto_measure_t moto_arm[2];
-
 
 /**
   * @brief     CAN1 中断回调函数，在程序初始化时注册
@@ -84,16 +80,16 @@ void can1_recv_callback(uint32_t recv_id, uint8_t data[])
       err_detector_hook(CHASSIS_M4_OFFLINE);
     }
     break;
-    case CAN_3508_M5_ID:
+    case CAN_YAW_MOTOR_ID:
     {
-      encoder_data_handle(&moto_arm[0], data);
-      //err_detector_hook(GIMBAL_YAW_OFFLINE);
+      encoder_data_handle(&moto_yaw, data);
+      err_detector_hook(GIMBAL_YAW_OFFLINE);
     }
     break;
-    case CAN_3508_M6_ID:
+    case CAN_PIT_MOTOR_ID:
     {
-      encoder_data_handle(&moto_arm[1], data);
-      //err_detector_hook(GIMBAL_PIT_OFFLINE);
+      encoder_data_handle(&moto_pit, data);
+      err_detector_hook(GIMBAL_PIT_OFFLINE);
     }
     break;
     case CAN_TRIGGER_MOTOR_ID:
@@ -275,15 +271,4 @@ void set_test_motor_current(int16_t test_moto_current[])
   data[6] = test_moto_current[0] >> 8;;
   data[7] = test_moto_current[0];;
   write_can(CHASSIS_CAN, CAN_GIMBAL_ID, data);
-}
-
-
-/*------------Designed To Control Single Motor------------
-  ------------------CAN1 Supported ONLY-------------------
-  ----------------------3508 ONLY NOW---------------------*/
-void set_motor_current(int8_t motorid, int16_t current){
-	static uint8_t data[8];
- 	data[2*motorid-2]=current>>8;
-	data[2*motorid-1]=current;
-	write_can(CHASSIS_CAN,0x200,data);
 }

@@ -25,7 +25,7 @@ void execute_task(const void* argu)
    //测试电机控制程序
     test_moto_control();
 		
-		/*if(rc.sw2 == 3)
+		if(rc.sw2 == 3)
 			{
 		   test_servo=1;
 			}
@@ -33,8 +33,7 @@ void execute_task(const void* argu)
 		else
 		  {
 			(test_servo =0);
-		  }*/
-    
+		  }
 			
     osDelay(5);
   }
