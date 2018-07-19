@@ -46,11 +46,11 @@ void test_moto_control(void)
 	//¶æ»ú¿ØÖÆÃüÁî
 		if(test_servo == 0 )
 		  {
-			set_pwm_param(PWM_IO1,2200);
+			set_pwm_param(PWM_IO1,500);
 		  }
 		else
 		  {
-		  set_pwm_param(PWM_IO1,1500);
+		  set_pwm_param(PWM_IO1,2500);
 		  }
    
 

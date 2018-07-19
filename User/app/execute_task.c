@@ -23,7 +23,7 @@ void execute_task(const void* argu)
    while(1)
   {
    //测试电机控制程序
-    test_moto_control();
+    //test_moto_control();
 		
 		if(rc.sw2 == 3)
 			{

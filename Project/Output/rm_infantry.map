@@ -173,7 +173,6 @@ Section Cross References
     detect_task.o(i.module_offline_callback) refers to detect_task.o(.data) for err_count
     detect_task.o(i.module_offline_callback) refers to detect_task.o(.bss) for glb_err
     execute_task.o(i.execute_task) refers to test_custom.o(i.test_moto_init) for test_moto_init
-    execute_task.o(i.execute_task) refers to test_custom.o(i.test_moto_control) for test_moto_control
     execute_task.o(i.execute_task) refers to cmsis_os.o(i.osDelay) for osDelay
     execute_task.o(i.execute_task) refers to uart_device.o(.bss) for rc
     execute_task.o(i.execute_task) refers to test_custom.o(.data) for test_servo
@@ -1832,7 +1831,7 @@ Removing Unused input sections from the image.
     Removing execute_task.o(.rev16_text), (4 bytes).
     Removing execute_task.o(.revsh_text), (4 bytes).
     Removing execute_task.o(.rrx_text), (6 bytes).
-    Removing execute_task.o(i.execute_task), (48 bytes).
+    Removing execute_task.o(i.execute_task), (44 bytes).
     Removing chassis_custom.o(.rev16_text), (4 bytes).
     Removing chassis_custom.o(.revsh_text), (4 bytes).
     Removing chassis_custom.o(.rrx_text), (6 bytes).
@@ -2522,7 +2521,7 @@ Removing Unused input sections from the image.
     Removing stm32f4xx_hal_rtc_ex.o(i.HAL_RTCEx_WakeUpTimerEventCallback), (2 bytes).
     Removing stm32f4xx_hal_rtc_ex.o(i.HAL_RTCEx_WakeUpTimerIRQHandler), (64 bytes).
 
-752 unused section(s) (total 58326 bytes) removed from the image.
+752 unused section(s) (total 58322 bytes) removed from the image.
 
 ==============================================================================
 
