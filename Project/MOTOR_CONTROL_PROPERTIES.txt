@@ -1,1 +1,4 @@
-Motor_3508_Position Kp=1.9 Ki=0.005 Kd=50
+Motor_3508_Position Kp=1.9 Ki=0 Kd=50
+Motor_2006_Position Kp=0.85 Ki=0.0003 Kd=20
+Motor_3508_Speed Kp=14 Ki=0.0038 Kd=8.6
+Motor_2006_Speed Kp=12 Ki=0.001 Kd=8

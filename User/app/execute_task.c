@@ -17,9 +17,14 @@ extern uint8_t test_servo;
 
 void execute_task(const void* argu)
 {
+test_nixie_light_init();
+//	while(1)
+//	test_nixie_light();
+	
    //测试电机初始化	
    test_moto_init();
 
+	
    while(1)
   {
    //测试电机控制程序
@@ -36,5 +41,6 @@ void execute_task(const void* argu)
 		  }
 			
     osDelay(5);
-  }
+ 
 }
+	}
