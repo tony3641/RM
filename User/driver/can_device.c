@@ -41,6 +41,9 @@ moto_measure_t moto_trigger;
 moto_measure_t moto_chassis[4];
 /* 外围模块测试电机 */
 moto_measure_t moto_test;
+moto_measure_t moto_arm;
+moto_measure_t moto_claw;
+moto_measure_t moto_trans;
 
 /**
   * @brief     CAN1 中断回调函数，在程序初始化时注册
@@ -80,28 +83,28 @@ void can1_recv_callback(uint32_t recv_id, uint8_t data[])
       err_detector_hook(CHASSIS_M4_OFFLINE);
     }
     break;
-    case CAN_YAW_MOTOR_ID:
+    case CAN_3508_M5_ID:
     {
-      encoder_data_handle(&moto_yaw, data);
+      encoder_data_handle(&moto_arm, data);
       err_detector_hook(GIMBAL_YAW_OFFLINE);
     }
     break;
-    case CAN_PIT_MOTOR_ID:
+    case CAN_3508_M6_ID:
     {
       encoder_data_handle(&moto_pit, data);
       err_detector_hook(GIMBAL_PIT_OFFLINE);
     }
     break;
-    case CAN_TRIGGER_MOTOR_ID:
+    case CAN_CLAW_ID:
     {
       moto_trigger.msg_cnt++;
-      moto_trigger.msg_cnt <= 10 ? get_moto_offset(&moto_trigger, data) : encoder_data_handle(&moto_trigger, data);
+      moto_trigger.msg_cnt <= 10 ? get_moto_offset(&moto_claw, data) : encoder_data_handle(&moto_claw, data);
       err_detector_hook(TRIGGER_MOTO_OFFLINE);
     }
     break;
-    case CAN_test_moto_ID:
+    case CAN_TRANS_ID:
     {
-      moto_test.msg_cnt++ <= 50 ? get_moto_offset(&moto_test, data) : \
+      moto_test.msg_cnt++ <= 50 ? get_moto_offset(&moto_trans, data) : \
       encoder_data_handle(&moto_test, data);
       
     }

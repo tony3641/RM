@@ -17,8 +17,7 @@ extern uint8_t test_servo;
 
 void execute_task(const void* argu)
 {
-   //测试电机初始化	
-   test_moto_init();
+   
 
    while(1)
   {

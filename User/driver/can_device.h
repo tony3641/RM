@@ -43,10 +43,10 @@ typedef enum
   CAN_3508_M2_ID       = 0x202,
   CAN_3508_M3_ID       = 0x203,
   CAN_3508_M4_ID       = 0x204,
-  CAN_YAW_MOTOR_ID     = 0x205,
-  CAN_PIT_MOTOR_ID     = 0x206, 
-  CAN_TRIGGER_MOTOR_ID = 0x207,
-  CAN_test_moto_ID     = 0x208,
+  CAN_3508_M5_ID       = 0x205,
+  CAN_3508_M6_ID       = 0x206, 
+  CAN_CLAW_ID          = 0x207,
+  CAN_TRANS_ID         = 0x208,
 
 	
   //发送ID
@@ -86,6 +86,9 @@ extern moto_measure_t moto_yaw;
 extern moto_measure_t moto_pit;
 extern moto_measure_t moto_trigger;
 extern moto_measure_t moto_test;
+extern moto_measure_t moto_arm;
+extern moto_measure_t moto_claw;
+extern moto_measure_t moto_trans;
 
 /**
   * @brief     CAN1 中断回调函数，在程序初始化时注册

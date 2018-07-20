@@ -10,7 +10,7 @@ int16_t test_moto_current[1];
 uint8_t test_servo;
 uint8_t key1;
 
-void test_moto_control(void)
+/*void test_moto_control(void)
 {
    //LED控制函数
 	 write_led_io(LED_IO1,LED_ON );	
@@ -69,4 +69,4 @@ void test_moto_control(void)
    //PID参数初始化		 
 	     pid_init(&pid_test_moto, 7000, 0, 1.9, 0.005, 50);
 
-   }
+   }*/

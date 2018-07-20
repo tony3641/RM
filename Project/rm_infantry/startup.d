@@ -55,6 +55,7 @@
 .\rm_infantry\startup.o: ..\Inc\os_inc\queue.h
 .\rm_infantry\startup.o: ..\Inc\os_inc\semphr.h
 .\rm_infantry\startup.o: ..\Inc\os_inc\event_groups.h
+.\rm_infantry\startup.o: ..\User\app\arm_task.h
 .\rm_infantry\startup.o: ..\User\driver\can_device.h
 .\rm_infantry\startup.o: ..\User\driver\uart_device.h
 .\rm_infantry\startup.o: ..\User\driver\calibrate.h
