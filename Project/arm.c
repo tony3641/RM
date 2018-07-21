@@ -11,9 +11,16 @@ short block_number;
 int target_claw;
 int target_arm;
 int arm_power_calculate(){
+  //Q->Arm up
+  //E->Arm down
   int16_t arm_power;
-  //if(rc.kb.bit.Q) {arm_power=5000; target=moto_arm.total_angle;}
-  //if(rc.kb.bit.E) {arm_power=-5000; target=moto_arm.total_angle;}
+  /*if(rc.kb.bit.Q){
+    arm_power=5000; 
+    target_arm=moto_arm.total_angle;
+}*/
+  /*else{if(rc.kb.bit.E){
+    arm_power=-5000; 
+    target=moto_arm.total_angle;}*/
   if(rc.sw1==2){
     arm_power=200; 
     target_arm=moto_arm.total_angle;
@@ -32,10 +39,16 @@ int arm_power_calculate(){
 
 
 int claw_power_calculate(int current){
-  //int target;
+  //right click->close
+  //left click->open
   int16_t claw_power;
-  //if(rc.mouse.l) {claw_power=5000; target=moto_claw.total_angle;}
-  //if(rc.mouse.r) {claw_power=-5000; target=moto_claw.total_angle;}
+  /*if(rc.kb.bit.Q){
+    claw_power=5000; 
+    target_claw=moto_claw.total_angle;
+}*/
+  /*else{if(rc.kb.bit.E){
+    claw_power=-5000; 
+    target=moto_claw.total_angle;}*/
   if(rc.sw2==2){
   claw_power=500; 
   target_claw=moto_claw.total_angle;
