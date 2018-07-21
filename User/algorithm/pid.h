@@ -111,4 +111,5 @@ extern pid_t pid_trigger_speed;
 extern pid_t pid_arm_moto;
 extern pid_t pid_claw_moto;
 extern pid_t pid_test_moto;
+extern pid_t pid_trans_moto;
 #endif

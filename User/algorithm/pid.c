@@ -44,6 +44,7 @@ pid_t pid_trigger_speed = { 0 };
 
 pid_t pid_claw_moto     = { 0 };
 pid_t pid_arm_moto      = { 0 };
+pid_t pid_trans_moto    = { 0 };//chuansongdai
 
 static void abs_limit(float *a, float ABS_MAX)
 {

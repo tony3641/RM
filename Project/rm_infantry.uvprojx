@@ -496,6 +496,11 @@
               <FileType>1</FileType>
               <FilePath>.\arm.c</FilePath>
             </File>
+            <File>
+              <FileName>arm.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\app\arm.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

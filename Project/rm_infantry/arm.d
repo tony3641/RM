@@ -43,3 +43,4 @@
 .\rm_infantry\arm.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\rm_infantry\arm.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\rm_infantry\arm.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\rm_infantry\arm.o: ..\User\app\arm.h
