@@ -31,7 +31,7 @@ void execute_task(const void* argu)
    
 		else
 		  {
-			(test_servo =0);
+			(test_servo=0);
 		  }
 			
     osDelay(5);

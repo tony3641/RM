@@ -10,6 +10,7 @@
 short block_number;
 int target_claw;
 int target_arm;
+
 int arm_power_calculate(){
   //Q->Arm up
   //E->Arm down
@@ -63,9 +64,18 @@ int claw_power_calculate(int current){
 }
 
 
-void block_count(){
 
+void camera_servo_ctrl(){
+	int degree=rc.mouse.x;
+	if(abs(degree)<100) degree=0;
+	degree+=1500;
+	set_pwm_param(PWM_IO1,degree);
 }
 
+
+void camera_servo_init(void){
+	set_pwm_group_param(PWM_GROUP1,20000);
+  start_pwm_output(PWM_IO1);
+}
 
 

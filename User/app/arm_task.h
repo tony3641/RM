@@ -9,4 +9,6 @@ int arm_power_calculate(void);
 int claw_power_calculate(void);
 void claw_param_init(void);
 void arm_task(const void* argu);
+void camera_servo_init(void);
+void camera_servo_ctrl(void);
 #endif
