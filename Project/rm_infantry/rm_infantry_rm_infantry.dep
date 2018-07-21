@@ -1,7 +1,7 @@
 Dependencies for Project 'rm_infantry', Target 'rm_infantry': (DO NOT MODIFY !)
-F (..\User\driver\can_device.c)(0x5B51B1F0)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I.\RTE\_rm_infantry-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\can_device.o --omf_browse .\rm_infantry\can_device.crf --depend .\rm_infantry\can_device.d)
-I (..\User\driver\can_device.h)(0x5B51B1F9)
-I (..\User\rm_hal_lib.h)(0x5B518228)
+F (..\User\driver\can_device.c)(0x5B529AA1)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I.\RTE\_rm_infantry-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\can_device.o --omf_browse .\rm_infantry\can_device.crf --depend .\rm_infantry\can_device.d)
+I (..\User\driver\can_device.h)(0x5B529E63)
+I (..\User\rm_hal_lib.h)(0x5B529AA1)
 I (..\Inc\hal_inc\stm32f4xx_hal.h)(0x5B518227)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x5B518227)
 I (..\Inc\main.h)(0x5B518227)
@@ -38,9 +38,9 @@ I (..\Inc\hal_inc\stm32f4xx_hal_tim_ex.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_uart.h)(0x5B518227)
 I (..\User\app\detect_task.h)(0x5B518228)
 I (..\User\sys.h)(0x5B518228)
-F (..\User\driver\uart_device.c)(0x5B518228)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I.\RTE\_rm_infantry-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\uart_device.o --omf_browse .\rm_infantry\uart_device.crf --depend .\rm_infantry\uart_device.d)
-I (..\User\driver\uart_device.h)(0x5B518228)
-I (..\User\rm_hal_lib.h)(0x5B518228)
+F (..\User\driver\uart_device.c)(0x5B516214)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I.\RTE\_rm_infantry-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\uart_device.o --omf_browse .\rm_infantry\uart_device.crf --depend .\rm_infantry\uart_device.d)
+I (..\User\driver\uart_device.h)(0x5B516214)
+I (..\User\rm_hal_lib.h)(0x5B529AA1)
 I (..\Inc\hal_inc\stm32f4xx_hal.h)(0x5B518227)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x5B518227)
 I (..\Inc\main.h)(0x5B518227)
@@ -80,7 +80,7 @@ I (..\User\sys.h)(0x5B518228)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 F (..\User\driver\calibrate.c)(0x5B518228)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I.\RTE\_rm_infantry-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\calibrate.o --omf_browse .\rm_infantry\calibrate.crf --depend .\rm_infantry\calibrate.d)
-I (..\User\rm_hal_lib.h)(0x5B518228)
+I (..\User\rm_hal_lib.h)(0x5B529AA1)
 I (..\Inc\hal_inc\stm32f4xx_hal.h)(0x5B518227)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x5B518227)
 I (..\Inc\main.h)(0x5B518227)
@@ -116,7 +116,7 @@ I (..\Inc\hal_inc\stm32f4xx_hal_tim.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_tim_ex.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_uart.h)(0x5B518227)
 I (..\User\driver\calibrate.h)(0x5B518228)
-I (..\User\driver\can_device.h)(0x5B51B1F9)
+I (..\User\driver\can_device.h)(0x5B529E63)
 F (..\User\driver\keyboard.c)(0x5B518228)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I.\RTE\_rm_infantry-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\keyboard.o --omf_browse .\rm_infantry\keyboard.crf --depend .\rm_infantry\keyboard.d)
 I (..\User\driver\keyboard.h)(0x5B518228)
 I (..\Inc\hal_inc\stm32f4xx_hal.h)(0x5B518227)
@@ -153,11 +153,11 @@ I (..\Inc\hal_inc\stm32f4xx_hal_spi.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_tim.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_tim_ex.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_uart.h)(0x5B518227)
-I (..\User\driver\uart_device.h)(0x5B518228)
-I (..\User\rm_hal_lib.h)(0x5B518228)
+I (..\User\driver\uart_device.h)(0x5B516214)
+I (..\User\rm_hal_lib.h)(0x5B529AA1)
 I (..\User\app\gimbal_task.h)(0x5B518228)
 I (..\User\sys.h)(0x5B518228)
-F (..\User\rm_hal_lib.h)(0x5B518228)()
+F (..\User\rm_hal_lib.h)(0x5B529AA1)()
 F (..\User\algorithm\pid.c)(0x5B51A397)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I.\RTE\_rm_infantry-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\pid.o --omf_browse .\rm_infantry\pid.crf --depend .\rm_infantry\pid.d)
 I (..\User\algorithm\pid.h)(0x5B51A391)
 I (..\Inc\hal_inc\stm32f4xx_hal.h)(0x5B518227)
@@ -232,7 +232,7 @@ I (..\Inc\hal_inc\stm32f4xx_hal_tim_ex.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_uart.h)(0x5B518227)
 F (..\User\startup.c)(0x5B518228)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I.\RTE\_rm_infantry-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\startup.o --omf_browse .\rm_infantry\startup.crf --depend .\rm_infantry\startup.d)
 I (..\User\startup.h)(0x5B5195A2)
-I (..\User\rm_hal_lib.h)(0x5B518228)
+I (..\User\rm_hal_lib.h)(0x5B529AA1)
 I (..\Inc\hal_inc\stm32f4xx_hal.h)(0x5B518227)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x5B518227)
 I (..\Inc\main.h)(0x5B518227)
@@ -286,9 +286,9 @@ I (..\Inc\os_inc\timers.h)(0x5B518227)
 I (..\Inc\os_inc\queue.h)(0x5B518227)
 I (..\Inc\os_inc\semphr.h)(0x5B518227)
 I (..\Inc\os_inc\event_groups.h)(0x5B518227)
-I (..\User\app\arm_task.h)(0x5B51A82E)
-I (..\User\driver\can_device.h)(0x5B51B1F9)
-I (..\User\driver\uart_device.h)(0x5B518228)
+I (..\User\app\arm_task.h)(0x5B529AA1)
+I (..\User\driver\can_device.h)(0x5B529E63)
+I (..\User\driver\uart_device.h)(0x5B516214)
 I (..\User\driver\calibrate.h)(0x5B518228)
 I (..\User\sys.h)(0x5B518228)
 F (..\User\app\gimbal_task.c)(0x5B518228)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I.\RTE\_rm_infantry-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\gimbal_task.o --omf_browse .\rm_infantry\gimbal_task.crf --depend .\rm_infantry\gimbal_task.d)
@@ -327,11 +327,11 @@ I (..\Inc\hal_inc\stm32f4xx_hal_spi.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_tim.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_tim_ex.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_uart.h)(0x5B518227)
-I (..\User\rm_hal_lib.h)(0x5B518228)
+I (..\User\rm_hal_lib.h)(0x5B529AA1)
 I (..\User\app\chassis_task.h)(0x5B518228)
 I (..\User\app\detect_task.h)(0x5B518228)
-I (..\User\driver\can_device.h)(0x5B51B1F9)
-I (..\User\driver\uart_device.h)(0x5B518228)
+I (..\User\driver\can_device.h)(0x5B529E63)
+I (..\User\driver\uart_device.h)(0x5B516214)
 I (..\User\driver\calibrate.h)(0x5B518228)
 I (..\User\driver\keyboard.h)(0x5B518228)
 I (..\User\algorithm\pid.h)(0x5B51A391)
@@ -392,9 +392,9 @@ I (..\Inc\hal_inc\stm32f4xx_hal_tim_ex.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_uart.h)(0x5B518227)
 I (..\User\app\detect_task.h)(0x5B518228)
 I (..\User\app\gimbal_task.h)(0x5B518228)
-I (..\User\rm_hal_lib.h)(0x5B518228)
-I (..\User\driver\can_device.h)(0x5B51B1F9)
-I (..\User\driver\uart_device.h)(0x5B518228)
+I (..\User\rm_hal_lib.h)(0x5B529AA1)
+I (..\User\driver\can_device.h)(0x5B529E63)
+I (..\User\driver\uart_device.h)(0x5B516214)
 I (..\User\driver\keyboard.h)(0x5B518228)
 I (..\User\algorithm\pid.h)(0x5B51A391)
 I (..\User\sys.h)(0x5B518228)
@@ -453,7 +453,7 @@ I (..\Inc\hal_inc\stm32f4xx_hal_tim.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_tim_ex.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_uart.h)(0x5B518227)
 I (..\User\sys.h)(0x5B518228)
-I (..\User\rm_hal_lib.h)(0x5B518228)
+I (..\User\rm_hal_lib.h)(0x5B529AA1)
 I (..\Inc\os_inc\cmsis_os.h)(0x5B518227)
 I (..\Inc\os_inc\FreeRTOS.h)(0x5B518227)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
@@ -505,9 +505,9 @@ I (..\Inc\hal_inc\stm32f4xx_hal_spi.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_tim.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_tim_ex.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_uart.h)(0x5B518227)
-I (..\User\driver\can_device.h)(0x5B51B1F9)
-I (..\User\rm_hal_lib.h)(0x5B518228)
-I (..\User\driver\uart_device.h)(0x5B518228)
+I (..\User\driver\can_device.h)(0x5B529E63)
+I (..\User\rm_hal_lib.h)(0x5B529AA1)
+I (..\User\driver\uart_device.h)(0x5B516214)
 I (..\Inc\os_inc\cmsis_os.h)(0x5B518227)
 I (..\Inc\os_inc\FreeRTOS.h)(0x5B518227)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
@@ -526,9 +526,9 @@ I (..\Inc\os_inc\event_groups.h)(0x5B518227)
 I (..\User\driver\calibrate.h)(0x5B518228)
 I (..\User\algorithm\pid.h)(0x5B51A391)
 I (..\User\sys.h)(0x5B518228)
-F (..\User\app\arm_task.c)(0x5B51CDF9)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I.\RTE\_rm_infantry-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\arm_task.o --omf_browse .\rm_infantry\arm_task.crf --depend .\rm_infantry\arm_task.d)
-I (..\User\driver\can_device.h)(0x5B51B1F9)
-I (..\User\rm_hal_lib.h)(0x5B518228)
+F (..\User\app\arm_task.c)(0x5B52B02F)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I.\RTE\_rm_infantry-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\arm_task.o --omf_browse .\rm_infantry\arm_task.crf --depend .\rm_infantry\arm_task.d)
+I (..\User\driver\can_device.h)(0x5B529E63)
+I (..\User\rm_hal_lib.h)(0x5B529AA1)
 I (..\Inc\hal_inc\stm32f4xx_hal.h)(0x5B518227)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x5B518227)
 I (..\Inc\main.h)(0x5B518227)
@@ -563,7 +563,7 @@ I (..\Inc\hal_inc\stm32f4xx_hal_spi.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_tim.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_tim_ex.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_uart.h)(0x5B518227)
-I (..\User\driver\uart_device.h)(0x5B518228)
+I (..\User\driver\uart_device.h)(0x5B516214)
 I (..\User\driver\keyboard.h)(0x5B518228)
 I (..\User\algorithm\pid.h)(0x5B51A391)
 I (..\User\sys.h)(0x5B518228)
@@ -585,8 +585,8 @@ I (..\Inc\os_inc\queue.h)(0x5B518227)
 I (..\Inc\os_inc\semphr.h)(0x5B518227)
 I (..\Inc\os_inc\event_groups.h)(0x5B518227)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (..\User\app\arm_task.h)(0x5B51A82E)
-F (..\User\app\arm_task.h)(0x5B51A82E)()
+I (..\User\app\arm_task.h)(0x5B529AA1)
+F (..\User\app\arm_task.h)(0x5B529AA1)()
 F (..\User\app\chassis_custom.c)(0x5B51822D)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I.\RTE\_rm_infantry-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\chassis_custom.o --omf_browse .\rm_infantry\chassis_custom.crf --depend .\rm_infantry\chassis_custom.d)
 I (..\User\app\chassis_task.h)(0x5B518228)
 I (..\Inc\hal_inc\stm32f4xx_hal.h)(0x5B518227)
@@ -624,9 +624,9 @@ I (..\Inc\hal_inc\stm32f4xx_hal_tim.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_tim_ex.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_uart.h)(0x5B518227)
 I (..\User\app\gimbal_task.h)(0x5B518228)
-I (..\User\rm_hal_lib.h)(0x5B518228)
-I (..\User\driver\can_device.h)(0x5B51B1F9)
-I (..\User\driver\uart_device.h)(0x5B518228)
+I (..\User\rm_hal_lib.h)(0x5B529AA1)
+I (..\User\driver\can_device.h)(0x5B529E63)
+I (..\User\driver\uart_device.h)(0x5B516214)
 I (..\User\driver\keyboard.h)(0x5B518228)
 I (..\User\algorithm\pid.h)(0x5B51A391)
 I (..\User\sys.h)(0x5B518228)
@@ -669,9 +669,9 @@ I (..\Inc\hal_inc\stm32f4xx_hal_spi.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_tim.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_tim_ex.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_uart.h)(0x5B518227)
-I (..\User\rm_hal_lib.h)(0x5B518228)
-I (..\User\driver\can_device.h)(0x5B51B1F9)
-I (..\User\driver\uart_device.h)(0x5B518228)
+I (..\User\rm_hal_lib.h)(0x5B529AA1)
+I (..\User\driver\can_device.h)(0x5B529E63)
+I (..\User\driver\uart_device.h)(0x5B516214)
 I (..\User\algorithm\pid.h)(0x5B51A391)
 I (..\User\sys.h)(0x5B518228)
 F (..\User\app\shoot_custom.c)(0x5B518228)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I.\RTE\_rm_infantry-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\shoot_custom.o --omf_browse .\rm_infantry\shoot_custom.crf --depend .\rm_infantry\shoot_custom.d)
@@ -710,8 +710,8 @@ I (..\Inc\hal_inc\stm32f4xx_hal_spi.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_tim.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_tim_ex.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_uart.h)(0x5B518227)
-I (..\User\rm_hal_lib.h)(0x5B518228)
-I (..\User\driver\can_device.h)(0x5B51B1F9)
+I (..\User\rm_hal_lib.h)(0x5B529AA1)
+I (..\User\driver\can_device.h)(0x5B529E63)
 I (..\User\algorithm\pid.h)(0x5B51A391)
 I (..\User\sys.h)(0x5B518228)
 F (..\User\sys.h)(0x5B518228)()
@@ -751,14 +751,14 @@ I (..\Inc\hal_inc\stm32f4xx_hal_spi.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_tim.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_tim_ex.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_uart.h)(0x5B518227)
-I (..\User\driver\can_device.h)(0x5B51B1F9)
-I (..\User\rm_hal_lib.h)(0x5B518228)
-I (..\User\driver\uart_device.h)(0x5B518228)
+I (..\User\driver\can_device.h)(0x5B529E63)
+I (..\User\rm_hal_lib.h)(0x5B529AA1)
+I (..\User\driver\uart_device.h)(0x5B516214)
 I (..\User\algorithm\pid.h)(0x5B51A391)
 I (..\User\sys.h)(0x5B518228)
-F (.\arm.c)(0x5B51B07B)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I.\RTE\_rm_infantry-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\arm.o --omf_browse .\rm_infantry\arm.crf --depend .\rm_infantry\arm.d)
-I (..\User\driver\can_device.h)(0x5B51B1F9)
-I (..\User\rm_hal_lib.h)(0x5B518228)
+F (.\arm.c)(0x5B52B2E1)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Inc\hal_inc -I ..\Inc\m3_inc -I ..\Inc\os_inc -I ..\Inc\hal_inc\Legacy -I ..\User -I ..\User\algorithm -I ..\User\app -I ..\User\driver --C99-I.\RTE\_rm_infantry-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_HAL_DRIVER -DSTM32F427xx --C99-o .\rm_infantry\arm.o --omf_browse .\rm_infantry\arm.crf --depend .\rm_infantry\arm.d)
+I (..\User\driver\can_device.h)(0x5B529E63)
+I (..\User\rm_hal_lib.h)(0x5B529AA1)
 I (..\Inc\hal_inc\stm32f4xx_hal.h)(0x5B518227)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x5B518227)
 I (..\Inc\main.h)(0x5B518227)
@@ -793,7 +793,7 @@ I (..\Inc\hal_inc\stm32f4xx_hal_spi.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_tim.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_tim_ex.h)(0x5B518227)
 I (..\Inc\hal_inc\stm32f4xx_hal_uart.h)(0x5B518227)
-I (..\User\driver\uart_device.h)(0x5B518228)
+I (..\User\driver\uart_device.h)(0x5B516214)
 I (..\User\driver\keyboard.h)(0x5B518228)
 I (..\User\algorithm\pid.h)(0x5B51A391)
 I (..\User\sys.h)(0x5B518228)

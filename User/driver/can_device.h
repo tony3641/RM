@@ -127,5 +127,6 @@ void send_chassis_moto_zero_current(void);
 void send_gimbal_moto_current(int16_t yaw_current, int16_t pit_current);
 void send_gimbal_moto_zero_current(void);
 void set_test_motor_current(int16_t current_data[]);
+void send_other_moto_current(int16_t current[]);
 
 #endif

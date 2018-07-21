@@ -5,8 +5,8 @@
 
 void arm_param_init(void);
 void claw_param_init(void);
-void arm_power_calculate(void);
-void claw_power_calculate(void);
+int arm_power_calculate(void);
+int claw_power_calculate(void);
 void claw_param_init(void);
 void arm_task(const void* argu);
 #endif

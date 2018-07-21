@@ -192,6 +192,28 @@ static void encoder_data_handle(moto_measure_t *ptr, uint8_t data[])
   ptr->filter_rate = (int32_t)(temp_sum/FILTER_BUF);
 }
 
+
+
+
+void send_other_moto_current(int16_t current[]){
+  static uint8_t data[8];
+  
+  data[0] = current[0] >> 8;
+  data[1] = current[0];
+  data[2] = current[1] >> 8;
+  data[3] = current[1];
+  data[4] = current[2] >> 8;
+  data[5] = current[2];
+  data[6] = current[3] >> 8;
+  data[7] = current[3];
+  
+  write_can(GIMBAL_CAN, CAN_GIMBAL_ID, data);
+  
+}
+
+
+
+
 /**
   * @brief     发送底盘电机电流数据到电调
   */
