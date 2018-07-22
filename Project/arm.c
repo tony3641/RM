@@ -15,6 +15,7 @@ short block_bool;
 short arm_position_bool;
 short sensor_bool;
 uint8_t sensor_status;
+int i;
 
 short block_num_test(void){
 	if(block_num<3&&block_num>0) return 1;
@@ -31,25 +32,14 @@ int arm_power_calculate(void){
   //E->Arm down
   int16_t arm_power;
   /*if(rc.kb.bit.Q){
-    arm_power=5000; 
+    arm_power=500; 
     target_arm=moto_arm.total_angle;
-}*/
-  /*else{if(rc.kb.bit.E){
-    arm_power=-5000; 
-    target=moto_arm.total_angle;}*/
-  if(rc.sw1==2){
-    arm_power=200; 
-    target_arm=moto_arm.total_angle;
-  }
-  else{
-    if(rc.sw1==1){
-      arm_power=-200; 
-      target_arm=moto_arm.total_angle;
-    }
-    else{
-      arm_power=pid_calc(&pid_arm_moto,moto_arm.total_angle,target_arm);
-    }
-  }
+}
+  else{if(rc.kb.bit.E){
+    arm_power=rc.ch1; 
+    target_arm=moto_arm.total_angle;}*/
+	if(rc.ch2>0) arm_power=rc.ch2*3;  
+	if(rc.ch2<0) arm_power=rc.ch2*5;
   return arm_power;
 }
 
@@ -65,16 +55,24 @@ int claw_power_calculate(void){
   /*else{if(rc.kb.mouse.r){ //
     claw_power=-5000; 
     target=moto_claw.total_angle;}*/
-  if(rc.sw2==2){
-  claw_power=500; 
-  target_claw=moto_claw.total_angle;
-  }
-  else{
-    if(rc.sw2==1) {claw_power=-500; target_claw=moto_claw.total_angle;}
-      else{
-    claw_power=pid_calc(&pid_arm_moto,moto_claw.total_angle,target_claw);
-      }
-  }
+  if(rc.sw1==1){
+		claw_power=2000;
+		i=1;
+	}
+	else{
+		if(rc.sw1==2){
+			claw_power=-2000;
+			i=0;
+		}
+		else{
+			if(rc.sw1==3) {
+				if(i==0) claw_power=-1000;
+				if(i==1) claw_power=0;
+			}
+		}
+	}
+		
+	
   return claw_power;
 }
 
@@ -100,7 +98,7 @@ void trans_param_init(void){
 
 void arm_param_init(void)
 {
-  pid_init(&pid_arm_moto, 5000, 50, 2.0f, 0.0f, 50.0f);
+  pid_init(&pid_arm_moto, 5000, 500, 0.85f, 0.0003f, 20.0f);
 }
 
 

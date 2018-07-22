@@ -59,3 +59,4 @@
 .\rm_infantry\arm_task.o: ..\Inc\os_inc\event_groups.h
 .\rm_infantry\arm_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\rm_infantry\arm_task.o: ..\User\app\arm_task.h
+.\rm_infantry\arm_task.o: ..\User\app\arm.h
