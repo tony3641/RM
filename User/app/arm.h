@@ -25,4 +25,6 @@ int arm_power_calculate(void);
 
 short block_num_test(void);
 
+void sensor_init(void);
+
 #endif

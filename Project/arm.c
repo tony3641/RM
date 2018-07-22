@@ -14,6 +14,7 @@ int target_arm;
 short block_bool;
 short arm_position_bool;
 short sensor_bool;
+uint8_t sensor_status;
 
 short block_num_test(void){
 	if(block_num<3&&block_num>0) return 1;
@@ -109,20 +110,28 @@ void claw_param_init(void)
 }
 
 int trans_power_calculate(void){
+	int power;
 	block_bool=block_num_test();
 	arm_position_bool=arm_position_test();
 	sensor_bool=sensor_test();
-	return 1;
+	if(arm_position_bool==0&&sensor_bool==0&&block_bool==1)
+	return power;
 }
 
-short arm_position_test(void){
+short arm_position_test(void){//0->down_up_down 1->else
 	short result=0;
 	return result;
 }
 
 
-short sensor_test(void){
+
+void sensor_init(void){
+	set_digital_io_dir(DIGI_IO2,IO_INPUT);
+}
+
+short sensor_test(void){//0->falseTOtrue 1->TrueToFalse
 	short result;
+	read_digital_io(LED_IO2,&sensor_status);
 	return result;
 }
 
