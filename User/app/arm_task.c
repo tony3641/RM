@@ -13,7 +13,7 @@
 
 
 extern int target_arm;
-
+extern int arm_bias;
 
 
 int16_t all_current[4]={0,0,0,0};
@@ -28,6 +28,7 @@ void arm_param_init(void);
 void arm_task(const void* argu){
 	
 	//initialize all motor&device
+	arm_bias=moto_arm.total_angle;
 	arm_param_init();
 	claw_param_init();
 	//trans_param_init();
@@ -35,20 +36,19 @@ void arm_task(const void* argu){
 	
    //¿ªÆô¿ØÖÆ¶Ë¿Ú
    uint32_t arm_wake_time = osKernelSysTick();
-	 target_arm=moto_arm.total_angle;
+	
   while(1){
-		arm_power=arm_power_calculate();
+		arm_power=arm_close_loop();
 		claw_power=claw_power_calculate();
 		//trans_power=trans_power_calculate();
 		all_current[0]=arm_power;
     all_current[1]=-arm_power; 
     all_current[2]=claw_power;
 		//all_current[3]=trans_power;
-		all_current[3]=0;
     send_other_moto_current(all_current);
-		camera_servo_ctrl(); 
+		//camera_servo_ctrl(); 
 		
-		osDelayUntil(&arm_wake_time, 5);
+		osDelayUntil(&arm_wake_time, 5);//Thread delay 5ms every loop
   }  
 
 }

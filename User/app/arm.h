@@ -27,4 +27,5 @@ short block_num_test(void);
 
 void sensor_init(void);
 
+int arm_close_loop(void);
 #endif

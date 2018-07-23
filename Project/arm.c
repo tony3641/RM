@@ -16,15 +16,13 @@ short arm_position_bool;
 short sensor_bool;
 uint8_t sensor_status;
 int i;
+int arm_bias;
+
 
 short block_num_test(void){
 	if(block_num<3&&block_num>0) return 1;
 	else {return 0;}
 }//no more than 3 and no less than 0
-
-
-
-
 
 
 int arm_power_calculate(void){
@@ -41,6 +39,20 @@ int arm_power_calculate(void){
 	if(rc.ch2>0) arm_power=rc.ch2*3;  
 	if(rc.ch2<0) arm_power=rc.ch2*5;
   return arm_power;
+}
+
+
+int arm_close_loop(void){
+	int16_t arm_power;
+	if(rc.ch2>0) {arm_power=rc.ch2*3; target_arm=moto_arm.total_angle;}
+	else{
+		if(rc.ch2<0) {arm_power=rc.ch2*5; target_arm=moto_arm.total_angle;}
+		else{
+			pid_calc(&pid_arm_moto,moto_arm.total_angle,target_arm);
+		}
+	}
+	return arm_power;
+
 }
 
 
