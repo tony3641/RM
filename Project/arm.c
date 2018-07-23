@@ -11,18 +11,14 @@
 short block_num;
 int target_claw;
 int target_arm;
+int target_trans;
 short block_bool;
 short arm_position_bool;
 short sensor_bool;
 uint8_t sensor_status;
 int i;
 int arm_bias;
-
-
-short block_num_test(void){
-	if(block_num<3&&block_num>0) return 1;
-	else {return 0;}
-}//no more than 3 and no less than 0
+int trans_bias;
 
 
 int arm_power_calculate(void){
@@ -36,8 +32,19 @@ int arm_power_calculate(void){
   else{if(rc.kb.bit.E){
     arm_power=rc.ch1; 
     target_arm=moto_arm.total_angle;}*/
-	if(rc.ch2>0) arm_power=rc.ch2*3;  
-	if(rc.ch2<0) arm_power=rc.ch2*5;
+	if(rc.ch2>0){
+		
+		if(rc.ch2>300&&moto_arm.speed_rpm>-100&&moto_arm.speed_rpm<0) arm_power=500;
+		else{arm_power=rc.ch2*3;}
+	}   
+	
+	if(rc.ch2<0){
+	
+		if(rc.ch2<-30&&moto_arm.speed_rpm<100&&moto_arm.speed_rpm>0) arm_power=-600;
+		else{arm_power=rc.ch2*4;}
+	}
+	
+	
   return arm_power;
 }
 
@@ -104,29 +111,36 @@ void camera_servo_init(void){
 }
 
 
-void trans_param_init(void){
-	pid_init(&pid_trans_moto, 5000, 50, 2.0f, 0.0f, 50.0f);
+void trans_param_init(void)
+{
+	pid_init(&pid_trans_moto, 2000, 50, 1.9f, 0.0f, 50.0f);
 }
 
 void arm_param_init(void)
 {
-  pid_init(&pid_arm_moto, 5000, 500, 0.85f, 0.0003f, 20.0f);
+  pid_init(&pid_arm_moto, 2000, 500, 0.85f, 0.0003f, 20.0f);
 }
 
 
 void claw_param_init(void)
 {
-  pid_init(&pid_arm_moto, 5000, 50, 2.0f, 0.0f, 50.0f);
+  pid_init(&pid_arm_moto, 2000, 500, 0.85f, 0.0003f, 20.0f);
 }
 
 int trans_power_calculate(void){
-	int power;
-	block_bool=block_num_test();
-	arm_position_bool=arm_position_test();
-	sensor_bool=sensor_test();
-	if(arm_position_bool==0&&sensor_bool==0&&block_bool==1)
-	return power;
-}
+	int trans_power;
+	switch(rc.sw2){
+		case 1: target_trans=trans_bias+6000; break;
+		
+		case 3: target_trans=trans_bias+3000; break;
+		
+		case 2: target_trans=trans_bias+0; break;
+		
+		default: break;
+	}
+	trans_power=pid_calc(&pid_trans_moto,moto_trans.total_angle,target_trans);
+	return trans_power;
+ }
 
 short arm_position_test(void){//0->down_up_down 1->else
 	short result=0;

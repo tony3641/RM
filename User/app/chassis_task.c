@@ -120,7 +120,7 @@ void get_chassis_mode(void)
   switch (rc.sw2)
   {
     case RC_UP:
-       chassis.mode = CHASSIS_FOLLOW_GIMBAL;
+       chassis.mode = CHASSIS_OPEN_LOOP;
 		//	chassis.mode = CHASSIS_OPEN_LOOP;//Open loop anyway.
     break;
     
@@ -129,7 +129,7 @@ void get_chassis_mode(void)
     break;
 
     case RC_DN:
-      chassis.mode = CHASSIS_STOP;
+      chassis.mode = CHASSIS_OPEN_LOOP ;
 			//chassis.mode = CHASSIS_OPEN_LOOP;//Open loop anyway.
     break;
   }

@@ -23,8 +23,6 @@ int claw_power_calculate(void);
 	
 int arm_power_calculate(void);
 
-short block_num_test(void);
-
 void sensor_init(void);
 
 int arm_close_loop(void);

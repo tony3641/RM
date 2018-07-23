@@ -105,7 +105,7 @@ void can1_recv_callback(uint32_t recv_id, uint8_t data[])
     case CAN_TRANS_ID:
     {
       moto_test.msg_cnt++ <= 50 ? get_moto_offset(&moto_trans, data) : \
-      encoder_data_handle(&moto_test, data);
+      encoder_data_handle(&moto_trans, data);
       
     }
     break;
