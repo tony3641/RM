@@ -240,6 +240,11 @@
           <WinNumber>1</WinNumber>
           <ItemText>moto_arm,0x0A</ItemText>
         </Ww>
+        <Ww>
+          <count>17</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>all_current,0x0A</ItemText>
+        </Ww>
       </WatchWindow1>
       <WatchWindow2>
         <Ww>

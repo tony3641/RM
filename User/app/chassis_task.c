@@ -54,6 +54,7 @@ void chassis_task(const void* argu)
   uint32_t chassis_wake_time = osKernelSysTick();
   while (1)
   {
+		pc_kb_hook();
     //切换底盘状态
     get_chassis_mode();
 

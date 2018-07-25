@@ -15,6 +15,8 @@
 extern int target_arm;
 extern int trans_bias;
 extern int arm_bias;
+extern uint8_t test_servo;
+
 
 int16_t all_current[4]={0,0,0,0};
 int arm_power;
@@ -26,15 +28,15 @@ void trans_param_init(void);
 void arm_param_init(void);
 
 void arm_task(const void* argu){
-	
+	pc_kb_hook();
 	//initialize all motor&device
 	arm_bias=moto_arm.total_angle;
 	trans_bias=moto_trans.total_angle;
 	arm_param_init();
 	claw_param_init();
 	trans_param_init();
-	//trans_param_init();
-	//camera_servo_init();
+	camera_servo_init();
+	set_pwm_param(PWM_IO1,2500);
 	
    //¿ªÆô¿ØÖÆ¶Ë¿Ú
    uint32_t arm_wake_time = osKernelSysTick();
