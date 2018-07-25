@@ -5,6 +5,10 @@
 
 void execute_task(const void* argu);
 
+static void jump(int i);
+static void delay(int i);
+static void jump_back();
+static void jump_next();
 
 
 #endif
